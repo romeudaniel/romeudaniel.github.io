@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Serviços de eletrónica, programação, automação, redes, edição digital, design gráfico, diagnóstico informático e tecnologia."
+    >
+
+    <meta
+        name="author"
+        content="Romeu Daniel"
+    >
+
+    <title>Serviços | Romeu Daniel</title>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+
+            <!-- LOGOTIPO -->
+
+            <a
+                href="../index.html"
+                class="logo-link"
+                aria-label="Página inicial"
+            >
+
+                <div class="logo">
+
+                    <img
+                        src="../images/logo/logov2.webp"
+                        alt="Logotipo Romeu Daniel"
+                    >
+
+                    <div class="logo-text">
+
+                        <span class="logo-name">
+                            Romeu Daniel
+                        </span>
+
+                        <span class="logo-subtitle">
+                            Eletrónica • Programação • Automação
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="artigos.html">
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="servicos.html"
+                            class="active"
+                        >
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             APRESENTAÇÃO
+        ================================================== -->
+
+        <section class="services-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    SERVIÇOS
+                </span>
+
+                <h1>
+                    Soluções para os seus projetos e necessidades
+                </h1>
+
+                <p>
+                    Serviços técnicos e digitais nas áreas de
+                    eletrónica, programação, automação, informática,
+                    design e tecnologia.
+                </p>
+
+                <a
+                    href="contato.html"
+                    class="button"
+                >
+                    Solicitar um serviço
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CATEGORIAS
+        ================================================== -->
+
+        <section class="services-section">
+
+            <div class="container">
+
+
+                <div class="services-categories">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            CATEGORIAS
+                        </span>
+
+                        <h2>
+                            Encontre o serviço que procura
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        class="category-list"
+                        role="group"
+                        aria-label="Categorias de serviços"
+                    >
+
+                        <button
+                            type="button"
+                            class="category-button active"
+                            data-category="todos"
+                        >
+                            Todos
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="electronica"
+                        >
+                            Eletrónica
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="programacao"
+                        >
+                            Programação
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="automacao"
+                        >
+                            Automação
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="informatica"
+                        >
+                            Informática
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="design"
+                        >
+                            Design
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="digital"
+                        >
+                            Serviços digitais
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LISTA DE SERVIÇOS
+                ================================================== -->
+
+                <div class="services-list">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            O QUE FAÇO
+                        </span>
+
+                        <h2>
+                            Serviços disponíveis
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        class="services-grid"
+                        id="services-container"
+                    >
+
+
+                        <!-- =================================================
+                             SERVIÇO 01
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="electronica"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/eletronica.webp"
+                                    alt="Serviços de eletrónica"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Eletrónica
+                                </span>
+
+                                <h3>
+                                    Projetos e soluções eletrónicas
+                                </h3>
+
+                                <p>
+                                    Desenvolvimento, montagem e análise
+                                    de circuitos eletrónicos para projetos
+                                    e aplicações específicas.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=electronica"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 02
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="programacao"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/code.webp"
+                                    alt="Serviços de programação"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Programação
+                                </span>
+
+                                <h3>
+                                    Desenvolvimento em Python
+                                </h3>
+
+                                <p>
+                                    Criação de programas, scripts,
+                                    automações e soluções desenvolvidas
+                                    de acordo com cada necessidade.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=programacao"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 03
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="automacao"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/automacao.webp"
+                                    alt="Serviços de automação"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Automação
+                                </span>
+
+                                <h3>
+                                    Automação de sistemas
+                                </h3>
+
+                                <p>
+                                    Desenvolvimento de soluções para
+                                    automatizar processos utilizando
+                                    eletrónica, sensores, controladores
+                                    e programação.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=automacao"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 04
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="informatica"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/diagnostico.webp"
+                                    alt="Diagnóstico informático"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Informática
+                                </span>
+
+                                <h3>
+                                    Diagnóstico informático
+                                </h3>
+
+                                <p>
+                                    Identificação de problemas de hardware,
+                                    software, sistema operativo e desempenho
+                                    de computadores.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=diagnostico"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 05
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="informatica"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/redes.webp"
+                                    alt="Serviços de redes"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Informática
+                                </span>
+
+                                <h3>
+                                    Redes e conectividade
+                                </h3>
+
+                                <p>
+                                    Configuração, organização e diagnóstico
+                                    de redes e soluções de conectividade
+                                    para computadores e dispositivos.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=redes"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 06
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="design"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/design-grafico.webp"
+                                    alt="Serviços de design gráfico"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Design
+                                </span>
+
+                                <h3>
+                                    Design gráfico
+                                </h3>
+
+                                <p>
+                                    Criação de materiais visuais para
+                                    projetos, marcas, redes sociais,
+                                    apresentações e divulgação.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=design"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 07
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="digital"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/edicao-digital.webp"
+                                    alt="Serviços de edição digital"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Serviços digitais
+                                </span>
+
+                                <h3>
+                                    Edição digital
+                                </h3>
+
+                                <p>
+                                    Edição e preparação de conteúdos
+                                    digitais para diferentes finalidades
+                                    e plataformas.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=edicao-digital"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SERVIÇO 08
+                        ================================================== -->
+
+                        <article
+                            class="content-card service-card"
+                            data-category="digital"
+                        >
+
+                            <div class="card-image">
+
+                                <img
+                                    src="../images/servicos/pesquisa.webp"
+                                    alt="Serviços de pesquisa"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Serviços digitais
+                                </span>
+
+                                <h3>
+                                    Pesquisa e informação
+                                </h3>
+
+                                <p>
+                                    Pesquisa, organização e tratamento
+                                    de informações para trabalhos,
+                                    projetos e necessidades específicas.
+                                </p>
+
+                                <a
+                                    href="contato.html?servico=pesquisa"
+                                    class="button"
+                                >
+                                    Solicitar serviço
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- ESTADO SEM SERVIÇOS -->
+
+                    <div
+                        class="services-empty"
+                        id="services-empty"
+                        hidden
+                    >
+
+                        <h3>
+                            Nenhum serviço encontrado
+                        </h3>
+
+                        <p>
+                            Tente selecionar outra categoria.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHAMADA FINAL
+        ================================================== -->
+
+        <section class="services-cta">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        PRECISA DE AJUDA?
+                    </span>
+
+                    <h2>
+                        Tem um projeto ou uma necessidade específica?
+                    </h2>
+
+                    <p>
+                        Entre em contacto para explicar o que precisa.
+                        Podemos analisar a sua necessidade e encontrar
+                        uma solução adequada.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="contato.html"
+                    class="button"
+                >
+                    Entrar em contacto
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    Romeu Daniel
+                </h2>
+
+                <p>
+                    Eletrónica • Programação • Automação
+                </p>
+
+            </div>
+
+
+            <div class="footer-navigation">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="artigos.html">
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="servicos.html"
+                            class="active"
+                        >
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contato
+                </h3>
+
+                <p>
+                    Entre em contacto através da página de contato.
+                </p>
+
+                <a href="contato.html">
+                    Falar comigo →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © <span data-current-year></span>
+                    Romeu Daniel. Todos os direitos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

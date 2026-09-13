@@ -1,0 +1,2810 @@
+/* =========================================================
+   ROMEU DANIEL — BASE CSS
+   Fundação visual do site
+   ========================================================= */
+
+
+/* =========================================================
+   1. VARIÁVEIS
+   ========================================================= */
+
+:root {
+
+    /* Cores principais */
+    --color-primary: #1e88e5;
+    --color-primary-dark: #1565c0;
+    --color-primary-light: #64b5f6;
+
+    --color-secondary: #0d47a1;
+
+    /* Cores neutras */
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-text: #222222;
+    --color-text-light: #666666;
+
+    --color-background: #ffffff;
+    --color-background-light: #f5f7fa;
+    --color-background-dark: #111827;
+
+    --color-border: #e0e0e0;
+
+    /* Tipografia */
+    --font-primary: Arial, Helvetica, sans-serif;
+
+    /* Espaçamentos */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+    /* Bordas */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.10);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    /* Transições */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+    /* Largura */
+    --container-width: 1200px;
+
+}
+
+
+/* =========================================================
+   2. RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   3. CONTAINER
+   ========================================================= */
+
+.container {
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+
+}
+
+
+/* =========================================================
+   4. TÍTULOS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin-bottom: var(--space-md);
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+
+h1 {
+    font-size: 2.8rem;
+}
+
+
+h2 {
+    font-size: 2.2rem;
+}
+
+
+h3 {
+    font-size: 1.4rem;
+}
+
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+
+/* =========================================================
+   5. LINKS
+   ========================================================= */
+
+a {
+    transition:
+        color var(--transition-normal),
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        opacity var(--transition-normal);
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+
+    outline: 3px solid var(--color-primary-light);
+    outline-offset: 3px;
+
+}
+
+
+/* =========================================================
+   6. BOTÕES
+   ========================================================= */
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding:
+        0.75rem
+        1.25rem;
+
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+
+    font-weight: 700;
+
+    text-align: center;
+
+    transition:
+        transform var(--transition-fast),
+        background-color var(--transition-normal),
+        color var(--transition-normal),
+        border-color var(--transition-normal);
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.button-primary {
+
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+}
+
+
+.button-primary:hover {
+
+    background-color: var(--color-primary-dark);
+
+}
+
+
+.button-secondary {
+
+    color: var(--color-primary);
+    background-color: transparent;
+
+    border-color: var(--color-primary);
+
+}
+
+
+.button-secondary:hover {
+
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+}
+
+
+/* =========================================================
+   7. LINKS DE TEXTO
+   ========================================================= */
+
+.text-link {
+
+    display: inline-block;
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+}
+
+
+.text-link:hover {
+
+    color: var(--color-primary-dark);
+
+}
+
+
+/* =========================================================
+   8. CABEÇALHO
+   ========================================================= */
+
+.site-header {
+
+    position: relative;
+    z-index: 1000;
+
+    width: 100%;
+
+    background-color: var(--color-white);
+
+    border-bottom: 1px solid var(--color-border);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.header-container {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 80px;
+
+}
+
+
+/* =========================================================
+   9. LOGOTIPO
+   ========================================================= */
+
+.logo-link {
+
+    display: inline-block;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-sm);
+
+}
+
+
+.logo img {
+
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+
+}
+
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.logo-name {
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+.logo-subtitle {
+
+    color: var(--color-text-light);
+
+    font-size: 0.72rem;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================================================
+   10. NAVEGAÇÃO
+   ========================================================= */
+
+.main-navigation ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-lg);
+
+}
+
+
+.main-navigation a {
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 0.5rem 0;
+
+    font-weight: 600;
+
+}
+
+
+.main-navigation a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--color-primary);
+
+    transition: width var(--transition-normal);
+
+}
+
+
+.main-navigation a:hover::after,
+.main-navigation a.active::after {
+
+    width: 100%;
+
+}
+
+
+.main-navigation a:hover,
+.main-navigation a.active {
+
+    color: var(--color-primary);
+
+}
+
+
+/* =========================================================
+   11. MENU MOBILE
+   ========================================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 8px;
+
+    border: 0;
+
+    background: transparent;
+
+}
+
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    margin: 5px 0;
+
+    background-color: var(--color-text);
+
+    border-radius: 3px;
+
+}
+
+
+/* =========================================================
+   12. HERO
+   ========================================================= */
+
+.hero {
+
+    background-color: var(--color-background-light);
+
+}
+
+
+.hero-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-xxl);
+
+    min-height: 600px;
+
+}
+
+
+.hero-content {
+
+    flex: 1;
+
+}
+
+
+.hero-label,
+.section-label {
+
+    display: inline-block;
+
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-primary);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+}
+
+
+.hero h1 {
+
+    margin-bottom: var(--space-lg);
+
+}
+
+
+.hero h1 span {
+
+    color: var(--color-primary);
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+    color: var(--color-text-light);
+
+    font-size: 1.1rem;
+
+}
+
+
+.hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-md);
+
+    margin-top: var(--space-xl);
+
+}
+
+
+.hero-image {
+
+    flex: 0 0 360px;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    border-radius: var(--radius-lg);
+
+}
+
+
+/* =========================================================
+   13. SEÇÕES
+   ========================================================= */
+
+.about-preview,
+.featured-articles,
+.featured-projects,
+.featured-services,
+.contact-preview {
+
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+
+}
+
+
+.featured-articles,
+.featured-services {
+
+    background-color: var(--color-background-light);
+
+}
+
+
+.section-heading {
+
+    max-width: 750px;
+
+    margin-bottom: var(--space-xl);
+
+}
+
+
+.section-heading h2 {
+
+    margin-bottom: var(--space-sm);
+
+}
+
+
+.section-heading p {
+
+    color: var(--color-text-light);
+
+}
+
+
+/* =========================================================
+   14. CONTEÚDO SOBRE
+   ========================================================= */
+
+.about-content {
+
+    max-width: 850px;
+
+}
+
+
+.about-content p {
+
+    color: var(--color-text-light);
+
+    font-size: 1.05rem;
+
+}
+
+
+/* =========================================================
+   15. GRIDS
+   ========================================================= */
+
+.articles-grid,
+.projects-grid,
+.services-grid {
+
+    display: grid;
+
+    gap: var(--space-lg);
+
+}
+
+
+.articles-grid,
+.projects-grid {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.services-grid {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+/* =========================================================
+   16. CARDS
+   ========================================================= */
+
+.content-card {
+
+    overflow: hidden;
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+}
+
+
+.content-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.card-image {
+
+    overflow: hidden;
+
+    aspect-ratio: 16 / 9;
+
+    background-color: var(--color-background-light);
+
+}
+
+
+.card-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.card-content {
+
+    padding: var(--space-lg);
+
+}
+
+
+.card-category {
+
+    display: inline-block;
+
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-primary);
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+
+}
+
+
+.card-content h3 {
+
+    margin-bottom: var(--space-sm);
+
+}
+
+
+.card-content p {
+
+    color: var(--color-text-light);
+
+}
+
+
+/* =========================================================
+   17. SERVIÇOS
+   ========================================================= */
+
+.service-card {
+
+    padding: var(--space-xl);
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.service-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: var(--space-md);
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-background-light);
+
+    font-size: 1.5rem;
+
+}
+
+
+/* =========================================================
+   18. AÇÕES DAS SEÇÕES
+   ========================================================= */
+
+.section-action {
+
+    margin-top: var(--space-xl);
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   19. CONTATO
+   ========================================================= */
+
+.contact-preview {
+
+    background-color: var(--color-background-dark);
+
+    color: var(--color-white);
+
+}
+
+
+.contact-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.contact-content {
+
+    max-width: 700px;
+
+}
+
+
+.contact-content .section-label {
+
+    color: var(--color-primary-light);
+
+}
+
+
+.contact-content p {
+
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* =========================================================
+   20. RODAPÉ
+   ========================================================= */
+
+.site-footer {
+
+    color: var(--color-white);
+
+    background-color: #0b0f14;
+
+}
+
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: var(--space-xxl);
+
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+
+}
+
+
+.footer-brand h2 {
+
+    margin-bottom: var(--space-sm);
+
+}
+
+
+.footer-brand p {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+.footer-navigation h3,
+.footer-contact h3 {
+
+    margin-bottom: var(--space-md);
+
+    font-size: 1rem;
+
+}
+
+
+.footer-navigation ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-xs);
+
+}
+
+
+.footer-navigation a,
+.footer-contact a {
+
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+.footer-navigation a:hover,
+.footer-contact a:hover {
+
+    color: var(--color-primary-light);
+
+}
+
+
+.footer-contact p {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+
+.footer-bottom .container {
+
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+
+    text-align: center;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 0.85rem;
+
+}
+
+
+/* =========================================================
+   FIM DO BASE.CSS
+   ========================================================= */
+   /* =========================================================
+   PÁGINA DE ARTIGOS
+   Estrutura base
+   ========================================================= */
+
+
+/* =====================================================
+   HERO DA PÁGINA
+===================================================== */
+
+.page-hero {
+
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+
+    text-align: center;
+
+}
+
+.page-hero .container {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+.page-hero h1 {
+
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+
+}
+
+.page-hero p {
+
+    max-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   SEÇÃO DE ARTIGOS
+===================================================== */
+
+.articles-section {
+
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+}
+
+
+/* =====================================================
+   PESQUISA
+===================================================== */
+
+.articles-search {
+
+    max-width: 850px;
+
+    margin: 0 auto 3rem;
+
+}
+
+.articles-search label {
+
+    display: block;
+
+    margin-bottom: 0.65rem;
+
+    font-weight: 600;
+
+}
+
+
+.search-box {
+
+    display: flex;
+
+    width: 100%;
+
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0.85rem 1rem;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 8px 0 0 8px;
+
+    font: inherit;
+
+    outline: none;
+
+}
+
+
+.search-box input:focus {
+
+    border-color: #555;
+
+}
+
+
+.search-box button {
+
+    padding: 0.85rem 1.25rem;
+
+    border: none;
+
+    border-radius: 0 8px 8px 0;
+
+    cursor: pointer;
+
+    font: inherit;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   CATEGORIAS
+===================================================== */
+
+.article-categories {
+
+    margin-bottom: 3.5rem;
+
+}
+
+
+.article-categories .section-heading {
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+.category-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.65rem;
+
+}
+
+
+.category-button {
+
+    padding: 0.65rem 1rem;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font: inherit;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.category-button:hover {
+
+    border-color: currentColor;
+
+}
+
+
+.category-button.active {
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   LISTAGEM
+===================================================== */
+
+.articles-list {
+
+    width: 100%;
+
+}
+
+
+.articles-list > .section-heading {
+
+    margin-bottom: 2rem;
+
+}
+
+
+/* =====================================================
+   GRID DOS ARTIGOS
+===================================================== */
+
+.articles-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+
+}
+
+
+/* =====================================================
+   CARD DO ARTIGO
+===================================================== */
+
+.article-card {
+
+    overflow: hidden;
+
+}
+
+
+.article-card .card-image {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+}
+
+
+.article-card .card-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.card-image-placeholder {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   CONTEÚDO DO CARD
+===================================================== */
+
+.article-card .card-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.article-card .card-category {
+
+    display: inline-block;
+
+    margin-bottom: 0.5rem;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+
+}
+
+
+.article-card h3 {
+
+    margin-bottom: 0.65rem;
+
+    line-height: 1.3;
+
+}
+
+
+.article-card p {
+
+    line-height: 1.6;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* =====================================================
+   METADADOS
+===================================================== */
+
+.card-meta {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.8rem;
+
+}
+
+
+.article-card .text-link {
+
+    margin-top: auto;
+
+}
+
+
+/* =====================================================
+   SEM RESULTADOS
+===================================================== */
+
+.articles-empty {
+
+    padding: 3rem 1.5rem;
+
+    text-align: center;
+
+}
+
+
+.articles-empty h3 {
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+/* =====================================================
+   ACESSIBILIDADE
+===================================================== */
+
+.category-button:focus-visible,
+.search-box button:focus-visible,
+.search-box input:focus-visible {
+
+    outline: 3px solid currentColor;
+
+    outline-offset: 3px;
+
+}
+
+
+/* =========================================================
+   FIM — PÁGINA DE ARTIGOS / BASE
+   ========================================================= */
+   /* =========================================================
+   PÁGINA DE ARTIGO INDIVIDUAL
+   Estrutura base
+   ========================================================= */
+
+.article-header {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.article-header .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.article-category {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.article-header h1 {
+    margin: 0 auto 1rem;
+    max-width: 900px;
+    line-height: 1.2;
+}
+
+.article-intro {
+    max-width: 750px;
+    margin: 0 auto 1.25rem;
+    line-height: 1.7;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   IMAGEM PRINCIPAL
+   ========================================================= */
+
+.article-featured-image {
+    padding-bottom: 3.5rem;
+}
+
+.article-featured-image .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.article-featured-image figure {
+    margin: 0;
+}
+
+.article-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CONTEÚDO DO ARTIGO
+   ========================================================= */
+
+.article-content {
+    padding-bottom: 4rem;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-section {
+    margin-bottom: 3rem;
+}
+
+.article-section h2 {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-section h3 {
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+}
+
+.article-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.article-section ul,
+.article-section ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.article-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   IMAGENS INTERNAS
+   ========================================================= */
+
+.article-image {
+    margin: 2.5rem 0;
+}
+
+.article-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-image figcaption {
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BLOCO DE CÓDIGO
+   ========================================================= */
+
+.article-section pre {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.article-section code {
+    font-family: monospace;
+}
+
+
+/* =========================================================
+   CONCLUSÃO
+   ========================================================= */
+
+.article-conclusion {
+    padding-top: 1rem;
+}
+
+
+/* =========================================================
+   ARTIGOS RELACIONADOS
+   ========================================================= */
+
+.related-articles {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.related-articles .section-heading {
+    max-width: 750px;
+    margin-bottom: 2rem;
+}
+
+.related-articles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.related-articles .article-card {
+    overflow: hidden;
+}
+
+.related-articles .article-card .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.related-articles .article-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-articles .article-card .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-articles .article-card .card-category {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.related-articles .article-card h3 {
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
+}
+
+.related-articles .article-card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.related-articles .article-card .text-link {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO ENTRE ARTIGOS
+   ========================================================= */
+
+.article-navigation {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.article-navigation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.article-navigation-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+}
+
+.article-navigation-link span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.article-navigation-link strong {
+    line-height: 1.4;
+}
+
+.article-navigation-link.all-articles {
+    text-align: center;
+}
+
+.article-navigation-link:focus-visible,
+.article-back-link:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+/* =========================================================
+   PÁGINA DE PROJETOS
+   ESTRUTURA BASE
+   ========================================================= */
+
+.projects-hero {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+
+.projects-hero .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.projects-hero h1 {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.projects-hero p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECÇÃO DE PROJETOS
+   ========================================================= */
+
+.projects-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.projects-categories {
+    margin-bottom: 3.5rem;
+}
+
+.projects-categories .section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.projects-list {
+    width: 100%;
+}
+
+.projects-list>.section-heading {
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   GRELHA DE PROJETOS
+   ========================================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* =========================================================
+   CARD DE PROJETO
+   ========================================================= */
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-card .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.project-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .card-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-card .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .card-category {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.project-card h3 {
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-card .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.project-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   ESTADO VAZIO
+   ========================================================= */
+
+.projects-empty {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.projects-empty h3 {
+    margin-bottom: 0.5rem;
+}
+
+.projects-empty p {
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CHAMADA FINAL
+   ========================================================= */
+
+.projects-cta {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.projects-cta .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.projects-cta .section-heading {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.projects-cta .button {
+    display: inline-block;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+.projects-categories .category-button:focus-visible,
+.project-card .button:focus-visible,
+.projects-cta .button:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+/* =========================================================
+   PÁGINA INDIVIDUAL DE PROJETO
+   ESTRUTURA BASE
+   ========================================================= */
+
+
+/* =========================================================
+   CABEÇALHO DO PROJETO
+   ========================================================= */
+
+.project-header {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.project-header .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.project-category {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-header h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.project-intro {
+    max-width: 780px;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   IMAGEM PRINCIPAL
+   ========================================================= */
+
+.project-featured-section {
+    padding-bottom: 3rem;
+}
+
+.project-featured-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CONTEÚDO DO PROJETO
+   ========================================================= */
+
+.project-content-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+}
+
+.project-content {
+    min-width: 0;
+}
+
+.project-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.project-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+
+.project-content ul,
+.project-content ol {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.project-content li {
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+}
+
+.project-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO PROJETO
+   ========================================================= */
+
+.project-information {
+    width: 100%;
+}
+
+.project-information-box {
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.project-information-box h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-information-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem 0;
+}
+
+.project-information-item:first-of-type {
+    padding-top: 0;
+}
+
+.project-information-item:last-of-type {
+    padding-bottom: 0;
+}
+
+.project-information-item span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.project-information-item strong {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   GALERIA
+   ========================================================= */
+
+.project-gallery-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.project-gallery-section .section-heading {
+    margin-bottom: 2rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.project-gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   PROJETOS RELACIONADOS
+   ========================================================= */
+
+.related-projects {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.related-projects .section-heading {
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO ENTRE PROJETOS
+   ========================================================= */
+
+.project-navigation-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.project-navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.project-navigation-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.project-navigation-link span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.project-navigation-link strong {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.project-navigation-link.all-projects {
+    text-align: center;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+.project-back-link:focus-visible,
+.project-navigation-link:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+/* =========================================================
+   PÁGINA DE SERVIÇOS
+   ESTRUTURA BASE
+   ========================================================= */
+
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+.services-hero {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+
+.services-hero .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.services-hero h1 {
+    max-width: 800px;
+    margin-top: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.services-hero p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.75rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ÁREA DE SERVIÇOS
+   ========================================================= */
+
+.services-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.services-categories {
+    margin-bottom: 3.5rem;
+}
+
+.services-categories .section-heading {
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================================================
+   LISTA DE SERVIÇOS
+   ========================================================= */
+
+.services-list {
+    width: 100%;
+}
+
+.services-list>.section-heading {
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* =========================================================
+   CARD DE SERVIÇO
+   ========================================================= */
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.service-card .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.service-card .card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card .card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-card .card-category {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.service-card h3 {
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
+}
+
+.service-card p {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.service-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   ESTADO SEM SERVIÇOS
+   ========================================================= */
+
+.services-empty {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.services-empty h3 {
+    margin-bottom: 0.5rem;
+}
+
+.services-empty p {
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CHAMADA FINAL
+   ========================================================= */
+
+.services-cta {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.services-cta .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.services-cta .section-heading {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.services-cta p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+.services-hero .button:focus-visible,
+.services-categories .category-button:focus-visible,
+.service-card .button:focus-visible,
+.services-cta .button:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+/* =========================================================
+   CONTATO — ESTILOS BASE
+========================================================= */
+
+/* HERO */
+
+.contact-hero {
+    padding: 70px 0 50px;
+}
+
+.contact-hero h1 {
+    margin-bottom: 18px;
+}
+
+.contact-hero p {
+    max-width: 720px;
+}
+
+
+/* =========================================================
+   MÉTODOS DE CONTATO
+========================================================= */
+
+.contact-methods {
+    display: grid;
+    gap: 24px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   ÍCONES DOS CARDS
+========================================================= */
+
+.contact-card-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+
+.contact-card-icon img {
+    width: 42px;
+    height: 42px;
+    
+    max-width: 42px;
+    max-height: 42px;
+    
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================================================
+   CONTEÚDO DOS CARDS
+========================================================= */
+
+.contact-card-content {
+    flex: 1;
+}
+
+.contact-card-label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.contact-card-content h3 {
+    margin-top: 0;
+}
+
+.contact-card-content p {
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+========================================================= */
+
+.social-links {
+    display: grid;
+    gap: 16px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+
+.social-icon img {
+    width: 32px;
+    height: 32px;
+    
+    max-width: 32px;
+    max-height: 32px;
+    
+    object-fit: contain;
+    display: block;
+}
+
+.social-name {
+    flex: 1;
+    font-weight: 600;
+}
+
+.social-action {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.contact-cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   SEGURANÇA DAS IMAGENS
+========================================================= */
+
+.contact-section img,
+.social-section img {
+    max-width: 100%;
+}
+/* =========================================================
+   PÁGINA DE PESQUISA — BASE
+========================================================= */
+
+.search-hero {
+    padding: 70px 0 50px;
+}
+
+.search-hero h1 {
+    margin-bottom: 18px;
+}
+
+.search-hero p {
+    max-width: 720px;
+}
+
+
+/* =========================================================
+   ÁREA PRINCIPAL DE PESQUISA
+========================================================= */
+
+.search-section {
+    padding: 20px 0 60px;
+}
+
+.search-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
+
+.site-search-form {
+    width: 100%;
+}
+
+.site-search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    width: 100%;
+    padding: 8px;
+    
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ÍCONE DE PESQUISA
+========================================================= */
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    
+    min-width: 24px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon svg {
+    width: 20px;
+    height: 20px;
+    
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    
+    display: block;
+}
+
+
+/* =========================================================
+   CAMPO DE PESQUISA
+========================================================= */
+
+.site-search-box input {
+    flex: 1;
+    
+    min-width: 0;
+    
+    border: none;
+    outline: none;
+    
+    background: transparent;
+    
+    font: inherit;
+}
+
+.site-search-box input::placeholder {
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   BOTÃO DE PESQUISA
+========================================================= */
+
+.search-button {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   RESULTADOS
+========================================================= */
+
+.search-results-section {
+    padding: 60px 0;
+}
+
+.search-results {
+    width: 100%;
+}
+
+.search-empty {
+    text-align: center;
+    
+    padding: 55px 20px;
+}
+
+.search-empty h3 {
+    margin-bottom: 10px;
+}
+
+.search-empty p {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+/* =========================================================
+   CATEGORIAS
+========================================================= */
+
+.search-categories {
+    padding: 60px 0 80px;
+}
+
+.search-category-list {
+    display: grid;
+    gap: 14px;
+}
+
+.search-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 18px 20px;
+    
+    text-decoration: none;
+}
+
+.search-category span:last-child {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+.visually-hidden {
+    position: absolute;
+    
+    width: 1px;
+    height: 1px;
+    
+    padding: 0;
+    margin: -1px;
+    
+    overflow: hidden;
+    
+    clip: rect(0, 0, 0, 0);
+    
+    white-space: nowrap;
+    
+    border: 0;
+}
+/* =========================================================
+   PÁGINA 404 — BASE
+========================================================= */
+
+.error-page {
+    min-height: 60vh;
+    
+    display: flex;
+    align-items: center;
+    
+    padding: 80px 0;
+}
+
+.error-content {
+    width: 100%;
+    max-width: 800px;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+
+/* =========================================================
+   CÓDIGO 404
+========================================================= */
+
+.error-code {
+    display: block;
+    
+    font-size: clamp(5rem, 15vw, 10rem);
+    font-weight: 800;
+    line-height: 0.9;
+    
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.error-content h1 {
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.error-content p {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+.error-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 15px;
+    
+    margin-top: 32px;
+}
+
+.error-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+{
+    "artigos": [
+        {
+            "id": 1,
+            "titulo": "Introdução à Eletrónica Digital",
+            "descricao": "Uma introdução aos principais conceitos da eletrónica digital, incluindo lógica binária, portas lógicas e circuitos digitais.",
+            "categoria": "electronica",
+            "data": "2026-09-05",
+            "imagem": "images/artigos/eletronica-digital.webp",
+            "url": "artigos/introducao-eletronica-digital.html",
+            "tags": [
+                "eletrónica",
+                "eletrónica digital",
+                "circuitos digitais",
+                "portas lógicas"
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Primeiros Passos com Python",
+            "descricao": "Conceitos fundamentais para começar a programar em Python e compreender a estrutura básica de um programa.",
+            "categoria": "programacao",
+            "data": "2026-09-05",
+            "imagem": "images/artigos/python.webp",
+            "url": "artigos/primeiros-passos-python.html",
+            "tags": [
+                "python",
+                "programação",
+                "programação python",
+                "código"
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "O que é Automação?",
+            "descricao": "Uma visão geral sobre automação, os seus princípios, aplicações e importância nos sistemas tecnológicos modernos.",
+            "categoria": "automacao",
+            "data": "2026-09-05",
+            "imagem": "images/artigos/automacao.webp",
+            "url": "artigos/o-que-e-automacao.html",
+            "tags": [
+                "automação",
+                "controle",
+                "sistemas",
+                "tecnologia"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Pesquise artigos, projetos e conteúdos sobre eletrónica, programação, automação, robótica e tecnologia."
+    >
+
+    <meta
+        name="author"
+        content="Romeu Daniel"
+    >
+
+    <title>Pesquisa | Romeu Daniel</title>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+
+            <!-- LOGOTIPO -->
+
+            <a
+                href="../index.html"
+                class="logo-link"
+                aria-label="Página inicial"
+            >
+
+                <div class="logo">
+
+                    <img
+                        src="../images/logo/logov2.webp"
+                        alt="Logotipo Romeu Daniel"
+                    >
+
+                    <div class="logo-text">
+
+                        <span class="logo-name">
+                            Romeu Daniel
+                        </span>
+
+                        <span class="logo-subtitle">
+                            Eletrónica • Programação • Automação
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="artigos.html">
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO DA PESQUISA
+        ================================================== -->
+
+        <section class="search-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    PESQUISA
+                </span>
+
+                <h1>
+                    Encontre o que procura
+                </h1>
+
+                <p>
+                    Pesquise rapidamente por artigos, projetos,
+                    temas e conteúdos disponíveis no site.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ÁREA DE PESQUISA
+        ================================================== -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+
+                <div class="search-wrapper">
+
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            PESQUISAR
+                        </span>
+
+                        <h2>
+                            O que você procura?
+                        </h2>
+
+                        <p>
+                            Escreva uma palavra, tema ou título
+                            para encontrar conteúdos relacionados.
+                        </p>
+
+                    </div>
+
+
+                    <!-- FORMULÁRIO DE PESQUISA -->
+
+                    <form
+                        class="site-search-form"
+                        id="site-search-form"
+                    >
+
+                        <label
+                            for="site-search-input"
+                            class="visually-hidden"
+                        >
+                            Pesquisar no site
+                        </label>
+
+
+                        <div class="site-search-box">
+
+
+                            <!-- ÍCONE DE PESQUISA -->
+
+                            <span
+                                class="search-icon"
+                                aria-hidden="true"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <circle
+                                        cx="11"
+                                        cy="11"
+                                        r="7"
+                                    ></circle>
+
+                                    <line
+                                        x1="16.5"
+                                        y1="16.5"
+                                        x2="22"
+                                        y2="22"
+                                    ></line>
+
+                                </svg>
+
+                            </span>
+
+
+                            <!-- CAMPO -->
+
+                            <input
+                                type="search"
+                                id="site-search-input"
+                                name="q"
+                                placeholder="Pesquisar artigos, projetos..."
+                                autocomplete="off"
+                            >
+
+
+                            <!-- BOTÃO -->
+
+                            <button
+                                type="submit"
+                                class="button search-button"
+                            >
+                                Pesquisar
+                            </button>
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESULTADOS
+        ================================================== -->
+
+        <section
+            class="search-results-section"
+            id="search-results-section"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        RESULTADOS
+                    </span>
+
+                    <h2>
+                        Resultados da pesquisa
+                    </h2>
+
+                </div>
+
+
+                <!--
+                    Inicialmente esta área fica vazia.
+
+                    Futuramente o JavaScript poderá inserir aqui:
+
+                    - Artigos encontrados
+                    - Projetos encontrados
+                    - Categorias
+                    - Títulos
+                    - Resumos
+                    - Links para conteúdo
+                -->
+
+
+                <div
+                    class="search-results"
+                    id="search-results"
+                >
+
+                    <div class="search-empty">
+
+                        <h3>
+                            Comece uma pesquisa
+                        </h3>
+
+                        <p>
+                            Escreva algo no campo acima para
+                            encontrar conteúdos no site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CATEGORIAS DE PESQUISA
+        ================================================== -->
+
+        <section class="search-categories">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        EXPLORAR
+                    </span>
+
+                    <h2>
+                        Pesquisar por área
+                    </h2>
+
+                </div>
+
+
+                <div class="search-category-list">
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Eletrónica
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Programação
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Automação
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Robótica
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Telecomunicações
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="artigos.html"
+                        class="search-category"
+                    >
+                        <span>
+                            Tecnologia
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    Romeu Daniel
+                </h2>
+
+                <p>
+                    Eletrónica • Programação • Automação
+                </p>
+
+            </div>
+
+
+            <div class="footer-navigation">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="artigos.html">
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contato
+                </h3>
+
+                <p>
+                    Entre em contacto através da página de contato.
+                </p>
+
+                <a href="contato.html">
+                    Falar comigo →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © <span data-current-year></span>
+                    Romeu Daniel. Todos os direitos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

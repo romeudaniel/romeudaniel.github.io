@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Artigos e conteúdos sobre eletrónica, programação, automação, robótica, telecomunicações e tecnologia."
+    >
+
+    <meta name="author" content="Romeu Daniel">
+
+    <title>Artigos | Romeu Daniel</title>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+
+            <!-- LOGOTIPO -->
+
+            <a
+                href="../index.html"
+                class="logo-link"
+                aria-label="Página inicial"
+            >
+
+                <div class="logo">
+
+                    <img
+                        src="../images/logo/logov2.webp"
+                        alt="Logotipo Romeu Daniel"
+                    >
+
+                    <div class="logo-text">
+
+                        <span class="logo-name">
+                            Romeu Daniel
+                        </span>
+
+                        <span class="logo-subtitle">
+                            Eletrónica • Programação • Automação
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="artigos.html"
+                            class="active"
+                        >
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             TÍTULO E INTRODUÇÃO
+        ================================================== -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    ARTIGOS
+                </span>
+
+                <h1>
+                    Artigos e conteúdos
+                </h1>
+
+                <p>
+                    Um espaço dedicado à partilha de conhecimentos,
+                    experiências, pesquisas e conteúdos relacionados
+                    com tecnologia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PESQUISA E CATEGORIAS
+        ================================================== -->
+
+        <section class="articles-section">
+
+            <div class="container">
+
+
+                <!-- ÁREA DE PESQUISA -->
+
+                <div class="articles-search">
+
+                    <label for="article-search">
+                        Pesquisar artigos
+                    </label>
+
+                    <div class="search-box">
+
+                        <input
+                            type="search"
+                            id="article-search"
+                            name="article-search"
+                            placeholder="Pesquisar por título, tema ou palavra-chave..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            id="search-button"
+                        >
+                            Pesquisar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CATEGORIAS -->
+
+                <div class="article-categories">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            CATEGORIAS
+                        </span>
+
+                        <h2>
+                            Explorar por área
+                        </h2>
+
+                    </div>
+
+
+                    <div
+                        class="category-list"
+                        role="group"
+                        aria-label="Categorias de artigos"
+                    >
+
+                        <button
+                            type="button"
+                            class="category-button active"
+                            data-category="todos"
+                        >
+                            Todos
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="electronica"
+                        >
+                            Eletrónica
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="programacao"
+                        >
+                            Programação
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="automacao"
+                        >
+                            Automação
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="robotica"
+                        >
+                            Robótica
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="telecomunicacoes"
+                        >
+                            Telecomunicações
+                        </button>
+
+                        <button
+                            type="button"
+                            class="category-button"
+                            data-category="tecnologia"
+                        >
+                            Tecnologia
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ÁREA DOS CARDS
+                ================================================== -->
+
+                <div class="articles-list">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            PUBLICAÇÕES
+                        </span>
+
+                        <h2>
+                            Artigos
+                        </h2>
+
+                    </div>
+
+
+                    <!--
+                        Os artigos reais serão inseridos aqui
+                        posteriormente através do JavaScript
+                        e do arquivo artigos.json.
+                    -->
+
+
+                    <div
+                        class="articles-grid"
+                        id="articles-container"
+                    >
+
+
+                        <!-- CARD DE EXEMPLO -->
+
+                        <article class="content-card article-card">
+
+                            <div class="card-image">
+
+                                <div class="card-image-placeholder">
+                                    Imagem do artigo
+                                </div>
+
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <span class="card-category">
+                                    Categoria
+                                </span>
+
+                                <h3>
+                                    Título do artigo
+                                </h3>
+
+                                <p>
+                                    A introdução ou resumo do artigo
+                                    aparecerá nesta área.
+                                </p>
+
+                                <div class="card-meta">
+
+                                    <span>
+                                        Data
+                                    </span>
+
+                                    <span>
+                                        Tempo de leitura
+                                    </span>
+
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="text-link"
+                                >
+                                    Ler artigo →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                    <!-- ESTADO SEM ARTIGOS -->
+
+                    <div
+                        class="articles-empty"
+                        id="articles-empty"
+                        hidden
+                    >
+
+                        <h3>
+                            Nenhum artigo encontrado
+                        </h3>
+
+                        <p>
+                            Tente pesquisar por outro termo ou
+                            selecionar uma categoria diferente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    Romeu Daniel
+                </h2>
+
+                <p>
+                    Eletrónica • Programação • Automação
+                </p>
+
+            </div>
+
+
+            <div class="footer-navigation">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="artigos.html"
+                            class="active"
+                        >
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contato
+                </h3>
+
+                <p>
+                    Entre em contacto através da página de contato.
+                </p>
+
+                <a href="contato.html">
+                    Falar comigo →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © <span data-current-year></span>
+                    Romeu Daniel. Todos os direitos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
