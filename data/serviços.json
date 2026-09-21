@@ -1,0 +1,88 @@
+{
+    "servicos": [
+        {
+            "id": 1,
+            "nome": "Eletrónica",
+            "descricao": "Desenvolvimento, montagem e análise de circuitos eletrónicos e sistemas baseados em componentes eletrónicos.",
+            "categoria": "electronica",
+            "imagem": "images/icons/electronica.webp",
+            "url": "pages/servicos.html#electronica",
+            "tags": [
+                "eletrónica",
+                "circuitos",
+                "componentes",
+                "sistemas eletrónicos"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Programação",
+            "descricao": "Desenvolvimento de programas e soluções utilizando linguagens e tecnologias de programação.",
+            "categoria": "programacao",
+            "imagem": "images/icons/programacao.webp",
+            "url": "pages/servicos.html#programacao",
+            "tags": [
+                "programação",
+                "python",
+                "javascript",
+                "software"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Automação",
+            "descricao": "Criação de sistemas automáticos para controlar processos, equipamentos e dispositivos.",
+            "categoria": "automacao",
+            "imagem": "images/icons/automacao.webp",
+            "url": "pages/servicos.html#automacao",
+            "tags": [
+                "automação",
+                "controle",
+                "sensores",
+                "atuadores"
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Robótica",
+            "descricao": "Desenvolvimento de projetos e sistemas robóticos combinando eletrónica, programação e automação.",
+            "categoria": "robotica",
+            "imagem": "images/icons/robotica.webp",
+            "url": "pages/servicos.html#robotica",
+            "tags": [
+                "robótica",
+                "Arduino",
+                "sensores",
+                "atuadores"
+            ]
+        },
+        {
+            "id": 5,
+            "nome": "Design Digital",
+            "descricao": "Criação e edição de materiais gráficos e conteúdos digitais para projetos e plataformas online.",
+            "categoria": "design",
+            "imagem": "images/icons/design.webp",
+            "url": "pages/servicos.html#design",
+            "tags": [
+                "design",
+                "design gráfico",
+                "edição",
+                "conteúdo digital"
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "Diagnóstico Informático",
+            "descricao": "Análise de problemas de computadores, sistemas operativos, software e configurações.",
+            "categoria": "informatica",
+            "imagem": "images/icons/informatica.webp",
+            "url": "pages/servicos.html#informatica",
+            "tags": [
+                "informática",
+                "computadores",
+                "diagnóstico",
+                "software"
+            ]
+        }
+    ]
+}

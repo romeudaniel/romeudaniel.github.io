@@ -4,14 +4,20 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
         content="Artigos e conteúdos sobre eletrónica, programação, automação, robótica, telecomunicações e tecnologia."
     >
 
-    <meta name="author" content="Romeu Daniel">
+    <meta
+        name="author"
+        content="Romeu Daniel"
+    >
 
     <title>Artigos | Romeu Daniel</title>
 
@@ -72,7 +78,9 @@
             </a>
 
 
-            <!-- NAVEGAÇÃO -->
+            <!-- =================================================
+                 NAVEGAÇÃO
+            ================================================== -->
 
             <nav
                 class="main-navigation"
@@ -97,6 +105,7 @@
                         <a
                             href="artigos.html"
                             class="active"
+                            aria-current="page"
                         >
                             Artigos
                         </a>
@@ -125,13 +134,16 @@
             </nav>
 
 
-            <!-- MENU MOBILE -->
+            <!-- =================================================
+                 MENU MOBILE
+            ================================================== -->
 
             <button
                 class="menu-toggle"
                 type="button"
                 aria-label="Abrir menu"
                 aria-expanded="false"
+                aria-controls="main-navigation"
             >
 
                 <span></span>
@@ -154,7 +166,7 @@
 
 
         <!-- =================================================
-             TÍTULO E INTRODUÇÃO
+             HERO DA PÁGINA
         ================================================== -->
 
         <section class="page-hero">
@@ -170,7 +182,7 @@
                 </h1>
 
                 <p>
-                    Um espaço dedicado à partilha de conhecimentos,
+                    Este espaço é dedicado à partilha de conhecimentos,
                     experiências, pesquisas e conteúdos relacionados
                     com tecnologia.
                 </p>
@@ -182,7 +194,7 @@
 
 
         <!-- =================================================
-             PESQUISA E CATEGORIAS
+             ÁREA DE ARTIGOS
         ================================================== -->
 
         <section class="articles-section">
@@ -190,7 +202,9 @@
             <div class="container">
 
 
-                <!-- ÁREA DE PESQUISA -->
+                <!-- =================================================
+                     PESQUISA
+                ================================================== -->
 
                 <div class="articles-search">
 
@@ -206,6 +220,7 @@
                             name="article-search"
                             placeholder="Pesquisar por título, tema ou palavra-chave..."
                             autocomplete="off"
+                            aria-label="Pesquisar artigos"
                         >
 
                         <button
@@ -221,7 +236,9 @@
 
 
 
-                <!-- CATEGORIAS -->
+                <!-- =================================================
+                     CATEGORIAS
+                ================================================== -->
 
                 <div class="article-categories">
 
@@ -252,6 +269,7 @@
                             Todos
                         </button>
 
+
                         <button
                             type="button"
                             class="category-button"
@@ -259,6 +277,7 @@
                         >
                             Eletrónica
                         </button>
+
 
                         <button
                             type="button"
@@ -268,6 +287,7 @@
                             Programação
                         </button>
 
+
                         <button
                             type="button"
                             class="category-button"
@@ -275,6 +295,7 @@
                         >
                             Automação
                         </button>
+
 
                         <button
                             type="button"
@@ -284,6 +305,7 @@
                             Robótica
                         </button>
 
+
                         <button
                             type="button"
                             class="category-button"
@@ -291,6 +313,7 @@
                         >
                             Telecomunicações
                         </button>
+
 
                         <button
                             type="button"
@@ -307,7 +330,7 @@
 
 
                 <!-- =================================================
-                     ÁREA DOS CARDS
+                     LISTA DE ARTIGOS
                 ================================================== -->
 
                 <div class="articles-list">
@@ -322,78 +345,37 @@
                             Artigos
                         </h2>
 
+                        <p>
+                            Explore os conteúdos publicados sobre
+                            tecnologia, eletrónica, programação,
+                            automação e outras áreas.
+                        </p>
+
                     </div>
 
 
-                    <!--
-                        Os artigos reais serão inseridos aqui
-                        posteriormente através do JavaScript
-                        e do arquivo artigos.json.
-                    -->
-
+                    <!-- =================================================
+                         CONTAINER DINÂMICO
+                    ================================================== -->
 
                     <div
                         class="articles-grid"
                         id="articles-container"
+                        aria-live="polite"
                     >
 
-
-                        <!-- CARD DE EXEMPLO -->
-
-                        <article class="content-card article-card">
-
-                            <div class="card-image">
-
-                                <div class="card-image-placeholder">
-                                    Imagem do artigo
-                                </div>
-
-                            </div>
-
-
-                            <div class="card-content">
-
-                                <span class="card-category">
-                                    Categoria
-                                </span>
-
-                                <h3>
-                                    Título do artigo
-                                </h3>
-
-                                <p>
-                                    A introdução ou resumo do artigo
-                                    aparecerá nesta área.
-                                </p>
-
-                                <div class="card-meta">
-
-                                    <span>
-                                        Data
-                                    </span>
-
-                                    <span>
-                                        Tempo de leitura
-                                    </span>
-
-                                </div>
-
-                                <a
-                                    href="#"
-                                    class="text-link"
-                                >
-                                    Ler artigo →
-                                </a>
-
-                            </div>
-
-                        </article>
-
+                        <!--
+                            Os artigos serão carregados
+                            automaticamente pelo artigos.js
+                            através do arquivo artigos.json.
+                        -->
 
                     </div>
 
 
-                    <!-- ESTADO SEM ARTIGOS -->
+                    <!-- =================================================
+                         ESTADO SEM RESULTADOS
+                    ================================================== -->
 
                     <div
                         class="articles-empty"
@@ -408,6 +390,28 @@
                         <p>
                             Tente pesquisar por outro termo ou
                             selecionar uma categoria diferente.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ESTADO DE ERRO
+                    ================================================== -->
+
+                    <div
+                        class="articles-error"
+                        id="articles-error"
+                        hidden
+                    >
+
+                        <h3>
+                            Não foi possível carregar os artigos.
+                        </h3>
+
+                        <p>
+                            Verifique o arquivo artigos.json
+                            e tente novamente.
                         </p>
 
                     </div>
@@ -431,6 +435,10 @@
         <div class="container footer-container">
 
 
+            <!-- =================================================
+                 MARCA
+            ================================================== -->
+
             <div class="footer-brand">
 
                 <h2>
@@ -443,6 +451,10 @@
 
             </div>
 
+
+            <!-- =================================================
+                 NAVEGAÇÃO DO RODAPÉ
+            ================================================== -->
 
             <div class="footer-navigation">
 
@@ -468,6 +480,7 @@
                         <a
                             href="artigos.html"
                             class="active"
+                            aria-current="page"
                         >
                             Artigos
                         </a>
@@ -496,6 +509,10 @@
             </div>
 
 
+            <!-- =================================================
+                 CONTATO
+            ================================================== -->
+
             <div class="footer-contact">
 
                 <h3>
@@ -515,13 +532,19 @@
         </div>
 
 
+        <!-- =================================================
+             COPYRIGHT
+        ================================================== -->
+
         <div class="footer-bottom">
 
             <div class="container">
 
                 <p>
-                    © <span data-current-year></span>
-                    Romeu Daniel. Todos os direitos reservados.
+                    ©
+                    <span data-current-year></span>
+                    Romeu Daniel.
+                    Todos os direitos reservados.
                 </p>
 
             </div>
@@ -536,7 +559,12 @@
          JAVASCRIPT
     ====================================================== -->
 
+    <!-- Funções gerais do site -->
     <script src="../js/main.js"></script>
+
+    <!-- Sistema de artigos -->
+    <script src="../js/artigos.js"></script>
+
 
 </body>
 </html>

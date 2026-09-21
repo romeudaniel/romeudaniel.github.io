@@ -5,23 +5,36 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   
+  
   /* =====================================================
      1. MENU MOBILE
      ===================================================== */
   
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navigation = document.querySelector(".main-navigation");
+  const menuToggle =
+    document.querySelector(".menu-toggle");
+  
+  const navigation =
+    document.querySelector(".main-navigation");
+  
   
   if (menuToggle && navigation) {
     
+    
+    /* =================================================
+       ABRIR / FECHAR MENU
+    ================================================= */
+    
     menuToggle.addEventListener("click", () => {
       
-      const isOpen = navigation.classList.toggle("menu-open");
+      const isOpen =
+        navigation.classList.toggle("menu-open");
+      
       
       menuToggle.setAttribute(
         "aria-expanded",
         isOpen ? "true" : "false"
       );
+      
       
       menuToggle.setAttribute(
         "aria-label",
@@ -33,21 +46,26 @@ document.addEventListener("DOMContentLoaded", () => {
     
     /* =================================================
        FECHAR MENU AO CLICAR NUM LINK
-    ================================================== */
+    ================================================= */
     
     const navigationLinks =
       navigation.querySelectorAll("a");
+    
     
     navigationLinks.forEach((link) => {
       
       link.addEventListener("click", () => {
         
-        navigation.classList.remove("menu-open");
+        navigation.classList.remove(
+          "menu-open"
+        );
+        
         
         menuToggle.setAttribute(
           "aria-expanded",
           "false"
         );
+        
         
         menuToggle.setAttribute(
           "aria-label",
@@ -61,15 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
     /* =================================================
        FECHAR MENU AO CLICAR FORA
-    ================================================== */
+    ================================================= */
     
     document.addEventListener("click", (event) => {
       
       const clickedInsideMenu =
         navigation.contains(event.target);
       
+      
       const clickedToggle =
         menuToggle.contains(event.target);
+      
       
       if (
         !clickedInsideMenu &&
@@ -77,12 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
         navigation.classList.contains("menu-open")
       ) {
         
-        navigation.classList.remove("menu-open");
+        navigation.classList.remove(
+          "menu-open"
+        );
+        
         
         menuToggle.setAttribute(
           "aria-expanded",
           "false"
         );
+        
         
         menuToggle.setAttribute(
           "aria-label",
@@ -100,20 +124,100 @@ document.addEventListener("DOMContentLoaded", () => {
      2. ANO AUTOMÁTICO
      ===================================================== */
   
-  const currentYear = new Date().getFullYear();
+  const currentYear =
+    new Date().getFullYear();
+  
   
   const yearElements =
-    document.querySelectorAll("[data-current-year]");
+    document.querySelectorAll(
+      "[data-current-year]"
+    );
+  
   
   yearElements.forEach((element) => {
     
-    element.textContent = currentYear;
+    element.textContent =
+      currentYear;
     
   });
   
   
   /* =====================================================
-     3. FECHAR MENU AO AUMENTAR A TELA
+     3. LINK ATIVO DA NAVEGAÇÃO
+     ===================================================== */
+  
+  const currentPath =
+    window.location.pathname;
+  
+  
+  const currentPage =
+    currentPath
+    .split("/")
+    .pop();
+  
+  
+  if (navigation) {
+    
+    const navigationLinks =
+      navigation.querySelectorAll("a");
+    
+    
+    navigationLinks.forEach((link) => {
+      
+      const href =
+        link.getAttribute("href");
+      
+      
+      if (!href) {
+        return;
+      }
+      
+      
+      const linkPage =
+        href
+        .split("/")
+        .pop()
+        .split("#")[0]
+        .split("?")[0];
+      
+      
+      /*
+       * Página inicial
+       */
+      
+      if (
+        (currentPage === "" ||
+          currentPage === "index.html") &&
+        linkPage === "index.html"
+      ) {
+        
+        link.classList.add("active");
+        
+        return;
+        
+      }
+      
+      
+      /*
+       * Outras páginas
+       */
+      
+      if (
+        currentPage &&
+        linkPage === currentPage
+      ) {
+        
+        link.classList.add("active");
+        
+      }
+      
+    });
+    
+  }
+  
+  
+  /* =====================================================
+     4. FECHAR MENU AO AUMENTAR A TELA
      ===================================================== */
   
   window.addEventListener("resize", () => {
@@ -124,12 +228,16 @@ document.addEventListener("DOMContentLoaded", () => {
       menuToggle
     ) {
       
-      navigation.classList.remove("menu-open");
+      navigation.classList.remove(
+        "menu-open"
+      );
+      
       
       menuToggle.setAttribute(
         "aria-expanded",
         "false"
       );
+      
       
       menuToggle.setAttribute(
         "aria-label",
@@ -142,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
   /* =====================================================
-     4. LOG
+     5. LOG
      ===================================================== */
   
   console.log(

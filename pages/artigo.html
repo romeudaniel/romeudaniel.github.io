@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -10,75 +12,182 @@
 
     <meta
         name="description"
-        content="Artigo de Romeu Daniel sobre eletrónica, programação, automação, robótica, telecomunicações e tecnologia."
+        id="article-meta-description"
+        content="Artigo de Romeu Daniel."
     >
 
-    <title>Artigo | Romeu Daniel</title>
+    <meta
+        name="author"
+        content="Romeu Daniel"
+    >
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-    <link rel="stylesheet" href="../css/tablet.css">
-    <link rel="stylesheet" href="../css/desktop.css">
+    <title id="article-page-title">
+        Artigo | Romeu Daniel
+    </title>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/mobile.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/tablet.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/desktop.css"
+    >
+
 </head>
+
 
 <body>
 
+
     <!-- =====================================================
          CABEÇALHO
-         ===================================================== -->
+    ====================================================== -->
 
     <header class="site-header">
 
         <div class="container header-container">
 
-            <a href="../index.html" class="site-logo">
-                <img
-                    src="../images/logo/logov2.webp"
-                    alt="Romeu Daniel"
-                >
 
-                <span>Romeu Daniel</span>
+            <!-- LOGOTIPO -->
+
+            <a
+                href="../index.html"
+                class="logo-link"
+                aria-label="Página inicial"
+            >
+
+                <div class="logo">
+
+                    <img
+                        src="../images/logo/logov2.webp"
+                        alt="Logotipo Romeu Daniel"
+                    >
+
+                    <div class="logo-text">
+
+                        <span class="logo-name">
+                            Romeu Daniel
+                        </span>
+
+                        <span class="logo-subtitle">
+                            Eletrónica • Programação • Automação
+                        </span>
+
+                    </div>
+
+                </div>
+
             </a>
 
-            <nav class="main-navigation" aria-label="Navegação principal">
 
-                <a href="../index.html">Início</a>
+            <!-- NAVEGAÇÃO -->
 
-                <a href="sobre.html">Sobre</a>
+            <nav
+                class="main-navigation"
+                aria-label="Navegação principal"
+            >
 
-                <a href="artigos.html" class="active">
-                    Artigos
-                </a>
+                <ul>
 
-                <a href="projetos.html">
-                    Projetos
-                </a>
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
 
-                <a href="servicos.html">
-                    Serviços
-                </a>
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
 
-                <a href="contato.html">
-                    Contacto
-                </a>
+                    <li>
+                        <a
+                            href="artigos.html"
+                            class="active"
+                        >
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
 
             </nav>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
     </header>
 
 
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
     <main>
+
 
         <!-- =================================================
              CABEÇALHO DO ARTIGO
-             ================================================= -->
+        ================================================== -->
 
         <section class="article-header">
 
             <div class="container">
+
+
+                <!-- VOLTAR -->
 
                 <a
                     href="artigos.html"
@@ -87,31 +196,76 @@
                     ← Voltar para artigos
                 </a>
 
-                <div class="article-category" id="article-category">
-                    Eletrónica
-                </div>
+
+                <!-- CATEGORIA -->
+
+                <span
+                    class="article-category"
+                    id="article-category"
+                >
+                </span>
+
+
+                <!-- TÍTULO -->
 
                 <h1 id="article-title">
-                    Título do artigo
                 </h1>
+
+
+                <!-- INTRODUÇÃO / RESUMO -->
 
                 <p
                     class="article-intro"
                     id="article-intro"
                 >
-                    Breve introdução ou resumo do artigo.
                 </p>
+
+
+                <!-- METADADOS -->
 
                 <div class="article-meta">
 
-                    <span id="article-date">
-                        02 de setembro de 2026
+
+                    <!-- AUTOR -->
+
+                    <span
+                        id="article-author"
+                    >
                     </span>
 
-                    <span aria-hidden="true">•</span>
 
-                    <span id="article-reading-time">
-                        5 min de leitura
+                    <span aria-hidden="true">
+                        •
+                    </span>
+
+
+                    <!-- DATA -->
+
+                    <span
+                        id="article-date"
+                    >
+                    </span>
+
+
+                    <span aria-hidden="true">
+                        •
+                    </span>
+
+
+                    <!-- TEMPO DE LEITURA -->
+
+                    <span
+                        id="article-reading-time"
+                    >
+                    </span>
+
+
+                    <!-- DATA DE ATUALIZAÇÃO -->
+
+                    <span
+                        id="article-updated"
+                        hidden
+                    >
                     </span>
 
                 </div>
@@ -121,9 +275,10 @@
         </section>
 
 
+
         <!-- =================================================
              IMAGEM PRINCIPAL
-             ================================================= -->
+        ================================================== -->
 
         <section class="article-featured-image">
 
@@ -133,9 +288,15 @@
 
                     <img
                         id="article-image"
-                        src="../images/artigos/placeholder.jpg"
-                        alt="Imagem principal do artigo"
+                        src=""
+                        alt=""
                     >
+
+                    <figcaption
+                        id="article-image-caption"
+                        hidden
+                    >
+                    </figcaption>
 
                 </figure>
 
@@ -144,139 +305,90 @@
         </section>
 
 
+
         <!-- =================================================
-             CONTEÚDO DO ARTIGO
-             ================================================= -->
+             CONTEÚDO
+        ================================================== -->
 
         <article class="article-content">
 
             <div class="container article-container">
 
-                <!-- Introdução -->
 
-                <section class="article-section">
+                <!-- =================================================
+                     INTRODUÇÃO
+                ================================================== -->
 
-                    <h2>Introdução</h2>
+                <section
+                    class="article-section"
+                    id="article-introduction-section"
+                >
 
-                    <p>
-                        Este é o espaço destinado à introdução
-                        do artigo. Aqui será apresentado o tema,
-                        o problema abordado e o contexto necessário
-                        para compreender o conteúdo.
-                    </p>
+                    <h2>
+                        Introdução
+                    </h2>
 
-                    <p>
-                        O conteúdo real será carregado
-                        posteriormente através dos dados
-                        definidos no sistema de artigos.
-                    </p>
-
-                </section>
-
-
-                <!-- Primeira seção -->
-
-                <section class="article-section">
-
-                    <h2>Primeiro tópico</h2>
-
-                    <p>
-                        Aqui ficará o conteúdo principal desta
-                        seção do artigo. O texto poderá explicar
-                        conceitos, apresentar exemplos e desenvolver
-                        a ideia principal.
-                    </p>
-
-                    <p>
-                        Também será possível utilizar listas,
-                        imagens, tabelas e outros elementos
-                        necessários para explicar o assunto.
-                    </p>
-
-                </section>
-
-
-                <!-- Subtópico -->
-
-                <section class="article-section">
-
-                    <h3>Subtópico</h3>
-
-                    <p>
-                        Este espaço representa um subtópico
-                        dentro de uma seção maior.
-                    </p>
-
-                </section>
-
-
-                <!-- Imagem interna -->
-
-                <figure class="article-image">
-
-                    <img
-                        src="../images/artigos/placeholder.jpg"
-                        alt="Imagem ilustrativa do artigo"
+                    <div
+                        id="article-introduction"
                     >
-
-                    <figcaption>
-                        Legenda da imagem.
-                    </figcaption>
-
-                </figure>
-
-
-                <!-- Segunda seção -->
-
-                <section class="article-section">
-
-                    <h2>Segundo tópico</h2>
-
-                    <p>
-                        Outra seção do artigo poderá ser utilizada
-                        para explicar procedimentos, resultados,
-                        experiências ou aplicações práticas.
-                    </p>
-
-                    <ul>
-                        <li>Primeiro ponto importante.</li>
-                        <li>Segundo ponto importante.</li>
-                        <li>Terceiro ponto importante.</li>
-                    </ul>
+                    </div>
 
                 </section>
 
 
-                <!-- Código / exemplo técnico -->
 
-                <section class="article-section">
+                <!-- =================================================
+                     CONTEÚDO DINÂMICO
+                ================================================== -->
 
-                    <h2>Exemplo prático</h2>
+                <div
+                    id="article-content"
+                >
+                </div>
 
-                    <p>
-                        Quando necessário, artigos técnicos poderão
-                        apresentar exemplos de código ou outros
-                        conteúdos técnicos.
-                    </p>
 
-                    <pre><code>
-Exemplo de código
-                    </code></pre>
+
+                <!-- =================================================
+                     CONCLUSÃO
+                ================================================== -->
+
+                <section
+                    class="article-section article-conclusion"
+                    id="article-conclusion-section"
+                >
+
+                    <h2>
+                        Conclusão
+                    </h2>
+
+                    <div
+                        id="article-conclusion"
+                    >
+                    </div>
+                    <div id="article-final-sections"></div>
 
                 </section>
 
 
-                <!-- Conclusão -->
 
-                <section class="article-section article-conclusion">
+                <!-- =================================================
+                     TAGS
+                ================================================== -->
 
-                    <h2>Conclusão</h2>
+                <section
+                    class="article-tags-section"
+                    id="article-tags-section"
+                >
 
-                    <p>
-                        Aqui será apresentada a conclusão do artigo,
-                        reunindo os principais pontos abordados
-                        ao longo do conteúdo.
-                    </p>
+                    <h2>
+                        Tags
+                    </h2>
+
+                    <div
+                        class="article-tags"
+                        id="article-tags"
+                    >
+                    </div>
 
                 </section>
 
@@ -285,13 +397,15 @@ Exemplo de código
         </article>
 
 
+
         <!-- =================================================
              ARTIGOS RELACIONADOS
-             ================================================= -->
+        ================================================== -->
 
         <section class="related-articles">
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -315,47 +429,6 @@ Exemplo de código
                     class="related-articles-grid"
                     id="related-articles-container"
                 >
-
-                    <!--
-                        Os artigos relacionados serão
-                        carregados futuramente pelo JavaScript.
-                    -->
-
-                    <article class="article-card">
-
-                        <div class="card-image">
-
-                            <div class="card-image-placeholder">
-                                Imagem do artigo
-                            </div>
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Programação
-                            </span>
-
-                            <h3>
-                                Título do artigo relacionado
-                            </h3>
-
-                            <p>
-                                Breve descrição do artigo relacionado.
-                            </p>
-
-                            <a
-                                href="artigo.html"
-                                class="text-link"
-                            >
-                                Ler artigo →
-                            </a>
-
-                        </div>
-
-                    </article>
-
                 </div>
 
             </div>
@@ -363,9 +436,10 @@ Exemplo de código
         </section>
 
 
+
         <!-- =================================================
              NAVEGAÇÃO ENTRE ARTIGOS
-             ================================================= -->
+        ================================================== -->
 
         <section class="article-navigation">
 
@@ -373,22 +447,30 @@ Exemplo de código
 
                 <div class="article-navigation-grid">
 
+
+                    <!-- ANTERIOR -->
+
                     <a
                         href="#"
                         class="article-navigation-link previous"
                         id="previous-article"
+                        hidden
                     >
 
                         <span>
                             Artigo anterior
                         </span>
 
-                        <strong>
-                            ← Artigo anterior
+                        <strong
+                            id="previous-article-title"
+                        >
                         </strong>
 
                     </a>
 
+
+
+                    <!-- TODOS -->
 
                     <a
                         href="artigos.html"
@@ -396,7 +478,7 @@ Exemplo de código
                     >
 
                         <span>
-                            Todos os artigos
+                            Navegação
                         </span>
 
                         <strong>
@@ -406,18 +488,23 @@ Exemplo de código
                     </a>
 
 
+
+                    <!-- PRÓXIMO -->
+
                     <a
                         href="#"
                         class="article-navigation-link next"
                         id="next-article"
+                        hidden
                     >
 
                         <span>
                             Próximo artigo
                         </span>
 
-                        <strong>
-                            Próximo artigo →
+                        <strong
+                            id="next-article-title"
+                        >
                         </strong>
 
                     </a>
@@ -431,22 +518,121 @@ Exemplo de código
     </main>
 
 
+
     <!-- =====================================================
          RODAPÉ
-         ===================================================== -->
+    ====================================================== -->
 
     <footer class="site-footer">
 
-        <div class="container">
+        <div class="container footer-container">
 
-            <div class="footer-content">
+
+            <!-- MARCA -->
+
+            <div class="footer-brand">
+
+                <h2>
+                    Romeu Daniel
+                </h2>
 
                 <p>
-                    © 2026 Romeu Daniel. Todos os direitos reservados.
+                    Eletrónica • Programação • Automação
                 </p>
 
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <div class="footer-navigation">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="artigos.html"
+                            class="active"
+                        >
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contato
+                </h3>
+
                 <p>
-                    Eletrónica, Programação e Automação
+                    Entre em contacto através da página de contato.
+                </p>
+
+                <a href="contato.html">
+                    Falar comigo →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+
+                    ©
+                    <span data-current-year></span>
+
+                    Romeu Daniel.
+                    Todos os direitos reservados.
+
                 </p>
 
             </div>
@@ -456,8 +642,16 @@ Exemplo de código
     </footer>
 
 
-    <!-- JavaScript -->
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="../js/main.js"></script>
 
+    <script src="../js/artigos.js"></script>
+
+
 </body>
+
 </html>

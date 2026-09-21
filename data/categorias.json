@@ -1,0 +1,80 @@
+{
+    "categorias": [
+        {
+            "id": "electronica",
+            "nome": "Eletrónica",
+            "descricao": "Circuitos, componentes, sistemas digitais e projetos eletrónicos.",
+            "tipo": [
+                "artigos",
+                "projetos",
+                "servicos"
+            ]
+        },
+        {
+            "id": "programacao",
+            "nome": "Programação",
+            "descricao": "Desenvolvimento de software, algoritmos, linguagens e aplicações.",
+            "tipo": [
+                "artigos",
+                "projetos",
+                "servicos"
+            ]
+        },
+        {
+            "id": "automacao",
+            "nome": "Automação",
+            "descricao": "Sistemas de controlo automático, sensores, atuadores e processos.",
+            "tipo": [
+                "artigos",
+                "projetos",
+                "servicos"
+            ]
+        },
+        {
+            "id": "robotica",
+            "nome": "Robótica",
+            "descricao": "Robôs, sistemas inteligentes, sensores, atuadores e controlo.",
+            "tipo": [
+                "artigos",
+                "projetos",
+                "servicos"
+            ]
+        },
+        {
+            "id": "telecomunicacoes",
+            "nome": "Telecomunicações",
+            "descricao": "Comunicação de dados, redes, transmissão e sistemas de telecomunicações.",
+            "tipo": [
+                "artigos",
+                "projetos"
+            ]
+        },
+        {
+            "id": "tecnologia",
+            "nome": "Tecnologia",
+            "descricao": "Tecnologia, inovação, ferramentas digitais e tendências tecnológicas.",
+            "tipo": [
+                "artigos",
+                "projetos"
+            ]
+        },
+        {
+            "id": "design",
+            "nome": "Design",
+            "descricao": "Design gráfico, edição visual e criação de conteúdos digitais.",
+            "tipo": [
+                "artigos",
+                "servicos"
+            ]
+        },
+        {
+            "id": "informatica",
+            "nome": "Informática",
+            "descricao": "Computadores, software, sistemas operativos e soluções informáticas.",
+            "tipo": [
+                "artigos",
+                "servicos"
+            ]
+        }
+    ]
+}
