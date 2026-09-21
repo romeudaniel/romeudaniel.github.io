@@ -1,0 +1,211 @@
+{
+  "artigos": [
+    {
+      "id": 1,
+      "titulo": "A Procrastinação de Quem Quer Criar",
+      "descricao": "Quando pesquisar, planejar e aprender parecem trabalho, mas podem ser maneiras sofisticadas de adiar o primeiro teste.",
+      "categoria": "tecnologia",
+      "autor": "Romeu Daniel",
+      "data": "2026-09-21",
+      "dataAtualizacao": "",
+      "tempoLeitura": "8 minutos",
+      "imagemPrincipal": "../images/artigos/procrastinacao.webp",
+      "url": "pages/artigo.html?id=1",
+      "introducao": "Já alguma vez paraste e te sentaste porque, do nada, surgiu uma grande ideia? Mas, na hora de pô-la em prática, de trazê-la à vida, simplesmente dá aquela preguiça, achando que não estamos à altura por não sabermos por onde começar.\n\nÉ, com certeza, já.\n\nE provavelmente esse sentimento não surge apenas quando tens a ideia, mas também quando te sentas e finges que, milagrosamente, uma ideia cairá do céu.\n\nMas a verdade nós já sabemos:\n\no nosso cérebro é preguiçoso.",
+      "conteudo": [
+        {
+          "titulo": "A procrastinação de quem quer criar",
+          "paragrafos": [
+            "Há uma forma particularmente traiçoeira de procrastinação.",
+            "Ela não se parece com preguiça, nem envolve necessariamente redes sociais, televisão ou horas a jogar. Às vezes, pelo contrário, parece produtividade.",
+            "Acontece diante de uma bancada cheia de componentes, diante de um computador aberto, diante de um caderno repleto de esquemas.",
+            "É a procrastinação de quem quer construir alguma coisa:",
+            "um circuito, um robô, um programa, uma placa de circuito impresso, um dispositivo que ainda não existe.",
+            "Sentamo-nos com a intenção de começar, mas, antes do primeiro fio, surge uma dúvida.",
+            "Talvez seja melhor estudar mais.",
+            "Então abrimos um datasheet. Depois outro.",
+            "Pesquisamos qual componente seria o mais adequado. Comparamos ferramentas. Assistimos a um vídeo, depois a outro.",
+            "Encontramos um projeto semelhante. Depois encontramos um projeto muito melhor.",
+            "E, quando finalmente olhamos para o relógio, três horas se passaram.",
+            "E o pior é que o sentimento que aparece é de progresso.",
+            "A nossa mente se ilumina. O conhecimento adquirido nos deixa mais confiantes, faz-nos sentir melhor.",
+            "Mas a verdade é que não construímos nada.",
+            "Mas estivemos ocupados.",
+            "Talvez seja precisamente aí que esteja o problema."
+          ]
+        },
+        {
+          "titulo": "O estranho conforto de estar preparado",
+          "paragrafos": [
+            "Existe uma diferença fundamental entre preparar-se para criar e criar.",
+            "A preparação é confortável.",
+            "Enquanto estudamos sobre IA, nenhuma biblioteca deixa de responder.",
+            "Enquanto desenhamos a arquitetura perfeita, nenhum programa trava.",
+            "Enquanto escolhemos componentes, nenhuma fonte de alimentação queima.",
+            "O mundo da preparação tem uma característica extraordinária: ainda não foi testado pela realidade.",
+            "A criação é diferente.",
+            "Criar significa aceitar a possibilidade de descobrir que estávamos errados.",
+            "E talvez uma parte da procrastinação seja justamente uma tentativa sofisticada de adiar esse momento.",
+            "Enquanto planejamos, continuamos inteligentes.",
+            "Quando construímos, podemos estar errados.",
+            "E descobrir que estávamos errados é uma experiência menos confortável do que imaginar que estávamos certos."
+          ]
+        },
+        {
+          "titulo": "Um projeto começa quando alguma coisa dá errado",
+          "paragrafos": [
+            "Quem nunca construiu nada pode imaginar que o objetivo de um projeto é fazê-lo funcionar.",
+            "Quem constrói aprende outra coisa.",
+            "Um projeto técnico é, muitas vezes, uma sequência de coisas que inicialmente não funcionam.",
+            "O LED não acende.",
+            "O compilador apresenta erros.",
+            "O sensor devolve valores absurdos.",
+            "O motor gira para o lado contrário.",
+            "O microcontrolador reinicia.",
+            "A comunicação serial funciona apenas às vezes.",
+            "O documento é imprimido e descobrimos que esquecemos um parágrafo.",
+            "O código funciona — até deixar de funcionar.",
+            "E então percebemos uma verdade curiosa:",
+            "Um projeto começa a existir quando começa a dar errado.",
+            "Antes disso, ele é apenas uma ideia.",
+            "Uma ideia não pode falhar.",
+            "Um circuito pode.",
+            "Um programa pode.",
+            "Um projeto pode.",
+            "Começar significa transformar uma fantasia perfeita em uma realidade imperfeita.",
+            "Talvez seja por isso que começar seja tão difícil."
+          ]
+        },
+        {
+          "titulo": "A armadilha do projeto perfeito",
+          "paragrafos": [
+            "Existe outro inimigo silencioso: o projeto que construímos dentro da nossa cabeça.",
+            "Nele, tudo funciona.",
+            "O circuito é elegante, o código é limpo, a caixa encaixa perfeitamente, os cabos estão organizados, o display é bonito, o dispositivo responde instantaneamente e tudo funciona na primeira tentativa.",
+            "Então olhamos para a bancada real.",
+            "Fios espalhados.",
+            "Componentes provisórios.",
+            "Jumpers de todos os lados.",
+            "Código cheio de comentários como:",
+            "# depois preciso arranjar isto",
+            "E surge aquela sensação desconfortável:",
+            "Não é desse jeito que imaginei.",
+            "Talvez nunca tenha estado.",
+            "O projeto imaginado não precisa enfrentar as leis da física.",
+            "Não conhece tolerâncias de componentes, ruído elétrico, bugs, pinos invertidos, bibliotecas incompatíveis, problemas de alimentação ou aquele detalhe maravilhoso chamado realidade.",
+            "A realidade não é elegante.",
+            "Mas é onde as coisas aprendem a funcionar.",
+            "E não devemos desistir por causa disso.",
+            "Podemos aprender a lidar com o problema.",
+            "E, quando fazemos isso, desbloqueamos uma nova porta: mais um problema que conseguimos resolver.",
+            "Um projeto pode esconder dentro dele muitas tarefas pequenas.",
+            "E são essas tarefas que precisamos encontrar."
+          ]
+        },
+        {
+          "titulo": "O projeto não precisa ser útil",
+          "paragrafos": [
+            "Existe uma pressão moderna particularmente estranha: a ideia de que tudo precisa ter utilidade.",
+            "Isso vai para o currículo?",
+            "Pode virar produto?",
+            "Pode gerar dinheiro?",
+            "É inovador?",
+            "Mas a verdade é que algumas coisas podem simplesmente existir porque queremos fazê-las.",
+            "Construir um relógio estranho.",
+            "Fazer um candeeiro ou abajur que ninguém pediu.",
+            "Programar um jogo inútil.",
+            "Montar um circuito que produz um som irritante.",
+            "Fazer um bot que realiza tarefas básicas.",
+            "Porque existe valor em construir algo que não precisa justificar a própria existência.",
+            "Isso porque há uma diferença entre produzir e criar.",
+            "Produzir responde a uma necessidade.",
+            "Criar responde a uma curiosidade.",
+            "E a curiosidade é uma razão suficientemente humana."
+          ]
+        },
+        {
+          "titulo": "O projeto inacabado também ensina",
+          "paragrafos": [
+            "Existe uma ideia cruel na nossa cabeça:",
+            "Se eu não terminar, perdi meu tempo.",
+            "Ou ainda:",
+            "Não adianta começar algo que não vou terminar.",
+            "Mas isso não é necessariamente verdade.",
+            "Como disse antes, um projeto abandonado pode deixar uma biblioteca nova, um conceito entendido, um erro que nunca mais cometeremos, uma ferramenta que aprendemos, um componente que conhecemos, uma dúvida melhor formulada ou uma habilidade que não tínhamos antes.",
+            "Talvez alguns projetos não sejam construídos para chegar ao fim.",
+            "Talvez sejam construídos para nos transformar em alguém capaz de construir o próximo.",
+            "O primeiro bot ensina-nos por que não devemos construir o segundo daquele jeito.",
+            "O primeiro firmware ensina-nos a ler datasheets.",
+            "A primeira aplicação ensina-nos que a arquitetura que parecia maravilhosa às duas horas talvez não fosse tão maravilhosa assim.",
+            "O fracasso técnico é, frequentemente, apenas conhecimento adquirido de maneira cara."
+          ]
+        },
+        {
+          "titulo": "E lembre-se: ",
+          "paragrafos": [
+            "Começar pequeno não é pensar pequeno.",
+            "Pensar pequeno é limitar aquilo que podemos imaginar.",
+            "Enquanto que começar pequeno é apenas escolher onde colocar o primeiro tijolo."
+          ]
+        }
+      ],
+      "conclusao": [
+        "Talvez a verdadeira luta não seja contra a procrastinação.",
+        "Talvez seja contra a distância entre imaginar e fazer.",
+        "A imaginação é instantânea.",
+        "Podemos imaginar uma máquina em segundos.",
+        "Mas a construção, a construção exige horas, semanas ou até uma vida.",
+        "A imaginação não precisa de solda.",
+        "A construção precisa.",
+        "A imaginação não tem bugs.",
+        "O código tem.",
+        "A imaginação não queima componentes.",
+        "A bancada pode queimar.",
+        "Por isso, existe uma tentação permanente de permanecer no lugar onde tudo é possível:",
+        "a ideia.",
+        "Mas existe algo que só aparece quando atravessamos essa fronteira:",
+        "a realidade.",
+        "E a realidade, embora seja mais difícil, também é mais interessante.",
+        "Porque é nela que descobrimos coisas que não sabíamos que não sabíamos."
+      ],
+      "secoesFinais": [
+        {
+          "titulo": "Então, talvez amanhã...",
+          "paragrafos": [
+            "Talvez amanhã não seja necessário terminar o projeto.",
+            "Talvez nem seja necessário trabalhar durante três horas.",
+            "Talvez seja suficiente abrir o editor, ligar a placa, pegar no multímetro, abrir o datasheet, escrever dez linhas, soldar dois fios, testar uma coisa, fazer uma pergunta, resolver um pequeno problema e parar.",
+            "Porque talvez a pergunta correta não seja:",
+            "Como encontro motivação para terminar este projeto?",
+            "Talvez seja:",
+            "Qual é a menor coisa que posso fazer agora para tornar esse projeto um pouco mais real?",
+            "Faça essa coisa.",
+            "Depois outra.",
+            "E outra.",
+            "Porque um projeto não nasce quando temos certeza de que conseguiremos terminá-lo.",
+            "Nasce no momento em que aceitamos que a primeira versão provavelmente será ruim — e começamos mesmo assim."
+          ],
+          "imagens": [
+        {
+            "src": "../images/artigos/procrastinacao1.webp",
+            "alt": "Um engenheiro sentado na mesa de trabalho, montando um circuito com um arduíno, enquanto acompanha o esquema no deu computador."
+        }
+    ]
+        }
+      ],
+      "tags": [
+        "procrastinação",
+        "criatividade",
+        "produtividade",
+        "programação",
+        "eletrónica",
+        "projetos",
+        "tecnologia",
+        "aprendizagem",
+        "desenvolvimento pessoal"
+      ],
+      "artigosRelacionados": [],
+      "destaque": true
+    }
+  ]
+}
