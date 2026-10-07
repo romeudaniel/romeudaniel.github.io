@@ -1,0 +1,891 @@
+/* =========================================================
+   ROMEU DANIEL — TABLET CSS
+   Versão para tablets
+   ========================================================= */
+
+
+/*
+   Tablet:
+   768px até 1023px
+
+   O base.css fornece a estrutura geral.
+   Este arquivo adapta o layout para telas intermediárias.
+*/
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    /* =====================================================
+       1. CONFIGURAÇÃO GERAL
+       ===================================================== */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: 960px;
+
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+
+    /* =====================================================
+       2. TIPOGRAFIA
+       ===================================================== */
+
+    h1 {
+        font-size: 2.45rem;
+    }
+
+
+    h2 {
+        font-size: 2rem;
+    }
+
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+
+    /* =====================================================
+       3. CABEÇALHO
+       ===================================================== */
+
+    .header-container {
+        min-height: 76px;
+    }
+
+
+    .logo {
+        gap: 0.7rem;
+    }
+
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .logo-name {
+        font-size: 1.08rem;
+    }
+
+
+    .logo-subtitle {
+        font-size: 0.66rem;
+    }
+
+
+    /* =====================================================
+       4. NAVEGAÇÃO
+       ===================================================== */
+
+    /*
+       No tablet mantemos a navegação normal.
+       O menu hambúrguer continua desativado.
+    */
+
+    .main-navigation {
+        display: block;
+    }
+
+
+    .main-navigation ul {
+        gap: 1rem;
+    }
+
+
+    .main-navigation a {
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+    }
+
+
+    .menu-toggle {
+        display: none;
+    }
+
+
+    /* =====================================================
+       5. HERO
+       ===================================================== */
+
+    .hero-container {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 2rem;
+
+        min-height: 500px;
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+
+    .hero-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+
+    .hero h1 {
+        font-size: 2.45rem;
+    }
+
+
+    .hero-description {
+        max-width: 520px;
+        font-size: 1rem;
+    }
+
+
+    .hero-actions {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+
+    .hero-image {
+
+        flex: 0 0 300px;
+
+        max-width: 300px;
+
+    }
+
+
+    /* =====================================================
+       6. SEÇÕES
+       ===================================================== */
+
+    .about-preview,
+    .featured-articles,
+    .featured-projects,
+    .featured-services,
+    .contact-preview {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+
+    .section-heading {
+        max-width: 700px;
+        margin-bottom: 2rem;
+    }
+
+
+    /* =====================================================
+       7. SOBRE
+       ===================================================== */
+
+    .about-content {
+        max-width: 760px;
+    }
+
+
+    /* =====================================================
+       8. ARTIGOS
+       ===================================================== */
+
+    /*
+       No tablet utilizamos duas colunas.
+    */
+
+    .articles-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 1.25rem;
+
+    }
+
+
+    /* =====================================================
+       9. PROJETOS
+       ===================================================== */
+
+    .projects-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 1.25rem;
+
+    }
+
+
+    /* =====================================================
+       10. CARDS
+       ===================================================== */
+
+    .content-card {
+        min-width: 0;
+    }
+
+
+    .card-content {
+        padding: 1.25rem;
+    }
+
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .card-content p {
+        font-size: 0.92rem;
+    }
+
+
+    /* =====================================================
+       11. SERVIÇOS
+       ===================================================== */
+
+    /*
+       Três serviços podem continuar lado a lado
+       em tablets com largura suficiente.
+    */
+
+    .services-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 1rem;
+
+    }
+
+
+    .service-card {
+        padding: 1.25rem;
+    }
+
+
+    .service-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    /* =====================================================
+       12. BOTÕES
+       ===================================================== */
+
+    .button {
+        min-height: 44px;
+
+        padding:
+            0.7rem
+            1.1rem;
+
+        font-size: 0.95rem;
+    }
+
+
+    .hero-actions .button {
+        width: auto;
+    }
+
+
+    .section-action {
+        margin-top: 2rem;
+    }
+
+
+    /* =====================================================
+       13. CONTATO
+       ===================================================== */
+
+    .contact-content {
+        max-width: 650px;
+    }
+
+
+    /* =====================================================
+       14. RODAPÉ
+       ===================================================== */
+
+    .footer-container {
+
+        display: grid;
+
+        grid-template-columns:
+            1.4fr
+            1fr
+            1fr;
+
+        gap: 2rem;
+
+    }
+
+
+    .footer-brand h2 {
+        font-size: 1.35rem;
+    }
+
+
+    .footer-navigation a,
+    .footer-contact a {
+        font-size: 0.92rem;
+    }
+
+
+    /* =====================================================
+       15. AJUSTE PARA TABLETS MENORES
+       ===================================================== */
+
+    @media (min-width: 768px) and (max-width: 850px) {
+
+
+        .container {
+
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+
+        }
+
+
+        .main-navigation ul {
+            gap: 0.65rem;
+        }
+
+
+        .main-navigation a {
+            font-size: 0.82rem;
+        }
+
+
+        .logo-subtitle {
+            display: none;
+        }
+
+
+        .hero-container {
+            gap: 1.5rem;
+        }
+
+
+        .hero h1 {
+            font-size: 2.2rem;
+        }
+
+
+        .hero-image {
+
+            flex: 0 0 260px;
+
+            max-width: 260px;
+
+        }
+
+
+        .services-grid {
+            gap: 0.75rem;
+        }
+
+
+        .service-card {
+            padding: 1rem;
+        }
+
+    }
+
+
+    /* =====================================================
+       FIM DOS AJUSTES PARA TABLET
+       ===================================================== */
+
+}
+
+
+/* =========================================================
+   FIM DO TABLET.CSS
+   ========================================================= */
+   /* =========================================================
+   ARTIGOS — TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    
+    /* =====================================================
+       HERO
+    ===================================================== */
+    
+    .page-hero {
+        
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        
+    }
+    
+    
+    .page-hero h1 {
+        
+        font-size: 2.5rem;
+        
+    }
+    
+    
+    /* =====================================================
+       PESQUISA
+    ===================================================== */
+    
+    .articles-search {
+        
+        max-width: 700px;
+        
+    }
+    
+    
+    /* =====================================================
+       CATEGORIAS
+    ===================================================== */
+    
+    .category-list {
+        
+        gap: 0.6rem;
+        
+    }
+    
+    
+    /* =====================================================
+       GRID
+    ===================================================== */
+    
+    .articles-grid {
+        
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        
+        gap: 1.5rem;
+        
+    }
+    
+    
+    /* =====================================================
+       CARDS
+    ===================================================== */
+    
+    .article-card .card-content {
+        
+        padding: 1.25rem;
+        
+    }
+    
+    
+    .article-card h3 {
+        
+        font-size: 1.25rem;
+        
+    }
+    
+}
+/* =========================================================
+   PÁGINA DE ARTIGO
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .article-header {
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+    
+    .article-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .article-featured-image {
+        padding-bottom: 3.5rem;
+    }
+    
+    .article-container {
+        max-width: 720px;
+    }
+    
+    .article-section h2 {
+        font-size: 1.7rem;
+    }
+    
+    .related-articles-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .related-articles .article-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    .article-navigation-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+/* =========================================================
+   PÁGINA DE PROJETOS
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .projects-hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .projects-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    
+    /* Categorias */
+    
+    .projects-categories {
+        margin-bottom: 3rem;
+    }
+    
+    .projects-categories .category-list {
+        gap: 0.6rem;
+    }
+    
+    
+    /* Grelha */
+    
+    .projects-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        
+        gap: 1.5rem;
+    }
+    
+    
+    /* Cards */
+    
+    .project-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    
+    /* CTA */
+    
+    .projects-cta {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+/* =========================================================
+   PÁGINA INDIVIDUAL DE PROJETO
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    .project-header {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .project-header h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .project-featured-section {
+        padding-bottom: 3rem;
+    }
+
+
+    .project-container {
+        grid-template-columns:
+            minmax(0, 1fr)
+            280px;
+
+        gap: 2.5rem;
+    }
+
+
+    .project-gallery {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 1.25rem;
+    }
+
+
+    .project-navigation {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 1rem;
+    }
+
+}
+/* =========================================================
+   PÁGINA DE SERVIÇOS
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    
+    /* =====================================================
+       APRESENTAÇÃO
+       ===================================================== */
+    
+    .services-hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    
+    /* =====================================================
+       ÁREA DE SERVIÇOS
+       ===================================================== */
+    
+    .services-section {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    
+    .services-categories {
+        margin-bottom: 3rem;
+    }
+    
+    .services-categories .category-list {
+        gap: 0.6rem;
+    }
+    
+    
+    /* =====================================================
+       CARDS
+       ===================================================== */
+    
+    .services-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        
+        gap: 1.5rem;
+    }
+    
+    .service-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    
+    /* =====================================================
+       CHAMADA FINAL
+       ===================================================== */
+    
+    .services-cta {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+}
+/* =========================================================
+   CONTATO — TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    /* HERO */
+    
+    .contact-hero {
+        padding: 60px 0 45px;
+    }
+    
+    
+    /* MÉTODOS DE CONTATO */
+    
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+    
+    .contact-card {
+        gap: 16px;
+        padding: 24px;
+    }
+    
+    
+    /* ÍCONES */
+    
+    .contact-card-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    
+    .contact-card-icon img {
+        width: 38px;
+        height: 38px;
+        
+        max-width: 38px;
+        max-height: 38px;
+    }
+    
+    
+    /* REDES SOCIAIS */
+    
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .social-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+    }
+    
+    .social-icon img {
+        width: 30px;
+        height: 30px;
+        
+        max-width: 30px;
+        max-height: 30px;
+    }
+    
+    
+    /* FORMULÁRIO */
+    
+    .contact-form {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    
+    
+    /* CTA */
+    
+    .contact-cta-buttons {
+        justify-content: center;
+    }
+    
+}
+/* =========================================================
+   PÁGINA DE PESQUISA — TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    /* HERO */
+    
+    .search-hero {
+        padding: 60px 0 45px;
+    }
+    
+    
+    /* PESQUISA */
+    
+    .search-section {
+        padding: 20px 0 55px;
+    }
+    
+    .search-wrapper {
+        max-width: 780px;
+    }
+    
+    
+    /* CAIXA */
+    
+    .site-search-box {
+        gap: 12px;
+        padding: 9px;
+    }
+    
+    .site-search-box input {
+        font-size: 1rem;
+    }
+    
+    
+    /* BOTÃO */
+    
+    .search-button {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    
+    
+    /* RESULTADOS */
+    
+    .search-results-section {
+        padding: 55px 0;
+    }
+    
+    
+    /* CATEGORIAS */
+    
+    .search-categories {
+        padding: 55px 0 70px;
+    }
+    
+    .search-category-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+}
+/* =========================================================
+   PÁGINA 404 — TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .error-page {
+        min-height: 65vh;
+        padding: 70px 0;
+    }
+    
+    .error-code {
+        font-size: 8rem;
+        margin-bottom: 25px;
+    }
+    
+    .error-content {
+        max-width: 700px;
+    }
+    
+    .error-content h1 {
+        font-size: 2.3rem;
+    }
+    
+    .error-actions {
+        margin-top: 30px;
+    }
+    
+}

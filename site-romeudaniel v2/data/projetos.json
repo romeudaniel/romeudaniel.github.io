@@ -1,0 +1,52 @@
+{
+    "projetos": [
+        {
+            "id": 1,
+            "nome": "Sistema de Irrigação Automática",
+            "descricao": "Sistema automático desenvolvido para controlar a irrigação com base nas condições de humidade do solo.",
+            "categoria": "automacao",
+            "imagem": "images/projetos/irrigacao-automatica.webp",
+            "data": "2026-09-05",
+            "url": "projeto.html?id=1",
+            "tecnologias": [
+                "Arduino",
+                "Sensores",
+                "Relé",
+                "Bomba de água",
+                "Programação"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Sistema Automático de Iluminação",
+            "descricao": "Projeto de iluminação automática utilizando sensores para controlar o acionamento das luzes de acordo com as condições do ambiente.",
+            "categoria": "automacao",
+            "imagem": "images/projetos/iluminacao-automatica.webp",
+            "data": "2026-09-05",
+            "url": "projeto.html?id=2",
+            "tecnologias": [
+                "LDR",
+                "NE555",
+                "CD4017",
+                "Relé",
+                "Circuito eletrónico"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Semáforo Inteligente",
+            "descricao": "Sistema de controlo de tráfego desenvolvido com sensores para detetar veículos e adaptar o funcionamento do semáforo.",
+            "categoria": "robotica",
+            "imagem": "images/projetos/semaforo-inteligente.webp",
+            "data": "2026-09-05",
+            "url": "projeto.html?id=3",
+            "tecnologias": [
+                "Arduino",
+                "Sensores IR",
+                "LEDs",
+                "Programação",
+                "Eletrónica digital"
+            ]
+        }
+    ]
+}

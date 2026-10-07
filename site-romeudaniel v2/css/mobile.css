@@ -1,0 +1,1316 @@
+/* =========================================================
+   ROMEU DANIEL — MOBILE CSS
+   Versão para telemóveis
+   ========================================================= */
+
+
+/* =========================================================
+   1. CONFIGURAÇÃO GERAL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .container {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    /* =====================================================
+       2. TIPOGRAFIA
+       ===================================================== */
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+
+    h2 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+
+    p {
+        font-size: 0.95rem;
+    }
+
+
+    /* =====================================================
+       3. CABEÇALHO
+       ===================================================== */
+
+    .header-container {
+        min-height: 68px;
+    }
+
+
+    .logo {
+        gap: 0.6rem;
+    }
+
+
+    .logo img {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .logo-name {
+        font-size: 1rem;
+    }
+
+
+    .logo-subtitle {
+        max-width: 180px;
+
+        font-size: 0.62rem;
+    }
+
+
+    /* =====================================================
+       4. MENU
+       ===================================================== */
+
+    .main-navigation {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background-color: var(--color-white);
+
+        border-top: 1px solid var(--color-border);
+
+        box-shadow: var(--shadow-md);
+    }
+
+
+    .main-navigation ul {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+    }
+
+
+    .main-navigation li {
+        width: 100%;
+    }
+
+
+    .main-navigation a {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 0.9rem 1rem;
+
+        border-bottom: 1px solid var(--color-border);
+
+    }
+
+
+    .main-navigation a::after {
+        display: none;
+    }
+
+
+    .main-navigation a:hover,
+    .main-navigation a.active {
+        background-color: var(--color-background-light);
+    }
+
+
+    /*
+       Classe que será utilizada pelo JavaScript
+       para abrir o menu.
+    */
+
+    .main-navigation.menu-open {
+        display: block;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       5. HERO
+       ===================================================== */
+
+    .hero-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        justify-content: center;
+
+        gap: 2rem;
+
+        min-height: auto;
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .hero-label {
+
+        margin-bottom: 0.75rem;
+
+        font-size: 0.72rem;
+
+        line-height: 1.4;
+
+    }
+
+
+    .hero h1 {
+        margin-bottom: 1rem;
+    }
+
+
+    .hero-description {
+
+        max-width: none;
+
+        font-size: 1rem;
+
+        line-height: 1.6;
+
+    }
+
+
+    .hero-actions {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0.75rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+
+    .hero-image {
+
+        flex: none;
+
+        width: 100%;
+
+        max-width: 280px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .hero-image img {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       6. SEÇÕES
+       ===================================================== */
+
+    .about-preview,
+    .featured-articles,
+    .featured-projects,
+    .featured-services,
+    .contact-preview {
+
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+    }
+
+
+    .section-heading {
+
+        width: 100%;
+
+        margin-bottom: 1.5rem;
+
+    }
+
+
+    .section-heading h2 {
+        margin-bottom: 0.6rem;
+    }
+
+
+    .section-heading p {
+        font-size: 0.95rem;
+    }
+
+
+    /* =====================================================
+       7. SOBRE
+       ===================================================== */
+
+    .about-content {
+        max-width: none;
+    }
+
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       8. ARTIGOS
+       ===================================================== */
+
+    .articles-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+
+    /* =====================================================
+       9. PROJETOS
+       ===================================================== */
+
+    .projects-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+
+    /* =====================================================
+       10. CARDS
+       ===================================================== */
+
+    .content-card {
+        width: 100%;
+    }
+
+
+    .card-content {
+        padding: 1.25rem;
+    }
+
+
+    .card-category {
+        font-size: 0.72rem;
+    }
+
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .card-content p {
+        font-size: 0.92rem;
+    }
+
+
+    /* =====================================================
+       11. SERVIÇOS
+       ===================================================== */
+
+    .services-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+    }
+
+
+    .service-card {
+        padding: 1.25rem;
+    }
+
+
+    .service-icon {
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 1.35rem;
+
+    }
+
+
+    /* =====================================================
+       12. BOTÕES
+       ===================================================== */
+
+    .button {
+
+        min-height: 46px;
+
+        padding:
+            0.7rem
+            1rem;
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .section-action {
+        margin-top: 1.5rem;
+    }
+
+
+    .section-action .button {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       13. CONTATO
+       ===================================================== */
+
+    .contact-container {
+        width: 100%;
+    }
+
+
+    .contact-content {
+        width: 100%;
+    }
+
+
+    .contact-content h2 {
+        font-size: 1.8rem;
+    }
+
+
+    /* =====================================================
+       14. RODAPÉ
+       ===================================================== */
+
+    .footer-container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+    }
+
+
+    .footer-brand,
+    .footer-navigation,
+    .footer-contact {
+        width: 100%;
+    }
+
+
+    .footer-brand h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .footer-navigation h3,
+    .footer-contact h3 {
+        font-size: 1rem;
+    }
+
+
+    .footer-navigation ul {
+        gap: 0.35rem;
+    }
+
+
+    .footer-navigation a,
+    .footer-contact a {
+
+        display: inline-block;
+
+        padding: 0.2rem 0;
+
+    }
+
+
+    .footer-bottom .container {
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+
+    .footer-bottom p {
+
+        font-size: 0.75rem;
+
+        line-height: 1.5;
+
+    }
+
+
+    /* =====================================================
+       15. ACESSIBILIDADE / TOQUE
+       ===================================================== */
+
+    .main-navigation a,
+    .button,
+    .menu-toggle {
+
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+
+    /* =====================================================
+       16. DISPOSITIVOS MUITO PEQUENOS
+       ===================================================== */
+
+    @media (max-width: 360px) {
+
+        .container {
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+        }
+
+
+        h1 {
+            font-size: 1.75rem;
+        }
+
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .logo-name {
+            font-size: 0.92rem;
+        }
+
+
+        .logo-subtitle {
+            font-size: 0.55rem;
+        }
+
+
+        .hero-container {
+
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem;
+
+        }
+
+
+        .hero-image {
+            max-width: 240px;
+        }
+
+    }
+
+}
+
+
+/* =========================================================
+   FIM DO MOBILE.CSS
+   ========================================================= */
+   /* =========================================================
+   ARTIGOS — MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    
+    
+    /* =====================================================
+       HERO
+    ===================================================== */
+    
+    .page-hero {
+        
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        
+    }
+    
+    
+    .page-hero h1 {
+        
+        font-size: 2rem;
+        
+    }
+    
+    
+    .page-hero p {
+        
+        font-size: 0.95rem;
+        
+    }
+    
+    
+    /* =====================================================
+       SEÇÃO
+    ===================================================== */
+    
+    .articles-section {
+        
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        
+    }
+    
+    
+    /* =====================================================
+       PESQUISA
+    ===================================================== */
+    
+    .articles-search {
+        
+        margin-bottom: 2.5rem;
+        
+    }
+    
+    
+    .search-box {
+        
+        flex-direction: column;
+        
+        gap: 0.65rem;
+        
+    }
+    
+    
+    .search-box input {
+        
+        width: 100%;
+        
+        border-radius: 8px;
+        
+    }
+    
+    
+    .search-box button {
+        
+        width: 100%;
+        
+        border-radius: 8px;
+        
+    }
+    
+    
+    /* =====================================================
+       CATEGORIAS
+    ===================================================== */
+    
+    .article-categories {
+        
+        margin-bottom: 2.5rem;
+        
+    }
+    
+    
+    .category-list {
+        
+        gap: 0.5rem;
+        
+    }
+    
+    
+    .category-button {
+        
+        padding: 0.6rem 0.85rem;
+        
+        font-size: 0.85rem;
+        
+    }
+    
+    
+    /* =====================================================
+       CARDS
+    ===================================================== */
+    
+    .articles-grid {
+        
+        grid-template-columns: 1fr;
+        
+        gap: 1.25rem;
+        
+    }
+    
+    
+    .article-card .card-content {
+        
+        padding: 1.25rem;
+        
+    }
+    
+    
+    .article-card h3 {
+        
+        font-size: 1.2rem;
+        
+    }
+    
+    
+    .article-card p {
+        
+        font-size: 0.9rem;
+        
+    }
+    
+    
+    .card-meta {
+        
+        font-size: 0.75rem;
+        
+    }
+    
+}
+/* =========================================================
+   PÁGINA DE ARTIGO
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    
+    .article-header {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .article-back-link {
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .article-category {
+        font-size: 0.75rem;
+    }
+    
+    .article-header h1 {
+        font-size: 1.9rem;
+    }
+    
+    .article-intro {
+        font-size: 0.95rem;
+    }
+    
+    .article-meta {
+        font-size: 0.75rem;
+    }
+    
+    
+    /* Imagem principal */
+    
+    .article-featured-image {
+        padding-bottom: 2.5rem;
+    }
+    
+    .article-featured-image img {
+        border-radius: 0;
+    }
+    
+    
+    /* Conteúdo */
+    
+    .article-content {
+        padding-bottom: 3rem;
+    }
+    
+    .article-container {
+        width: 100%;
+    }
+    
+    .article-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    .article-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .article-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .article-section p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+    
+    .article-section ul,
+    .article-section ol {
+        font-size: 0.95rem;
+    }
+    
+    
+    /* Imagens internas */
+    
+    .article-image {
+        margin: 2rem 0;
+    }
+    
+    .article-image img {
+        border-radius: 0;
+    }
+    
+    
+    /* Código */
+    
+    .article-section pre {
+        padding: 1rem;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+    
+    
+    /* Relacionados */
+    
+    .related-articles {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .related-articles-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .related-articles .article-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    
+    /* Navegação */
+    
+    .article-navigation {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+    
+    .article-navigation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-navigation-link {
+        padding: 1rem;
+    }
+}
+/* =========================================================
+   PÁGINA DE PROJETOS
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    
+    .projects-hero {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .projects-hero p {
+        font-size: 0.95rem;
+    }
+    
+    
+    /* Secção */
+    
+    .projects-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .projects-categories {
+        margin-bottom: 2.5rem;
+    }
+    
+    .projects-categories .section-heading {
+        margin-bottom: 1.25rem;
+    }
+    
+    
+    /* Categorias */
+    
+    .projects-categories .category-list {
+        gap: 0.5rem;
+    }
+    
+    .projects-categories .category-button {
+        padding: 0.6rem 0.85rem;
+        font-size: 0.85rem;
+    }
+    
+    
+    /* Grelha */
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    
+    /* Cards */
+    
+    .project-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-card p {
+        font-size: 0.9rem;
+    }
+    
+    .project-card .card-meta {
+        font-size: 0.75rem;
+    }
+    
+    .project-card .button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    /* Estado vazio */
+    
+    .projects-empty {
+        padding: 2.5rem 1rem;
+    }
+    
+    
+    /* CTA */
+    
+    .projects-cta {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .projects-cta p {
+        font-size: 0.95rem;
+    }
+    
+    .projects-cta .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* =========================================================
+   PÁGINA INDIVIDUAL DE PROJETO
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    
+    
+    .project-header {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .project-back-link {
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .project-header h1 {
+        font-size: 2rem;
+    }
+    
+    .project-intro {
+        font-size: 0.95rem;
+    }
+    
+    .project-meta {
+        gap: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    
+    .project-featured-section {
+        padding-bottom: 2rem;
+    }
+    
+    .project-featured-image {
+        border-radius: 0;
+    }
+    
+    
+    .project-content-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .project-container {
+        gap: 2rem;
+    }
+    
+    .project-content p {
+        font-size: 0.95rem;
+    }
+    
+    
+    .project-information-box {
+        padding: 1.25rem;
+    }
+    
+    
+    .project-gallery-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    
+    .related-projects {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    
+    .project-navigation-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .project-navigation {
+        gap: 0.75rem;
+    }
+    
+    .project-navigation-link {
+        padding: 1rem;
+    }
+    
+    .project-navigation-link.all-projects {
+        order: -1;
+    }
+    
+}
+/* =========================================================
+   PÁGINA DE SERVIÇOS
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    
+    
+    /* =====================================================
+       APRESENTAÇÃO
+       ===================================================== */
+    
+    .services-hero {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .services-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .services-hero .button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    /* =====================================================
+       ÁREA DE SERVIÇOS
+       ===================================================== */
+    
+    .services-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .services-categories {
+        margin-bottom: 2.5rem;
+    }
+    
+    .services-categories .section-heading {
+        margin-bottom: 1.25rem;
+    }
+    
+    
+    /* =====================================================
+       CATEGORIAS
+       ===================================================== */
+    
+    .services-categories .category-list {
+        gap: 0.5rem;
+    }
+    
+    .services-categories .category-button {
+        padding: 0.6rem 0.85rem;
+        font-size: 0.85rem;
+    }
+    
+    
+    /* =====================================================
+       CARDS
+       ===================================================== */
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .service-card .card-content {
+        padding: 1.25rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    
+    .service-card .button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    /* =====================================================
+       SEM SERVIÇOS
+       ===================================================== */
+    
+    .services-empty {
+        padding: 2.5rem 1rem;
+    }
+    
+    
+    /* =====================================================
+       CHAMADA FINAL
+       ===================================================== */
+    
+    .services-cta {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .services-cta p {
+        font-size: 0.95rem;
+    }
+    
+    .services-cta .button {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+/* =========================================================
+   PÁGINA DE PESQUISA — MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+    
+    /* HERO */
+    
+    .search-hero {
+        padding: 45px 0 35px;
+    }
+    
+    .search-hero h1 {
+        font-size: 2rem;
+    }
+    
+    
+    /* ÁREA DE PESQUISA */
+    
+    .search-section {
+        padding: 15px 0 45px;
+    }
+    
+    .search-wrapper {
+        width: 100%;
+    }
+    
+    
+    /* CAIXA DE PESQUISA */
+    
+    .site-search-box {
+        gap: 8px;
+        padding: 7px;
+    }
+    
+    
+    /* ÍCONE */
+    
+    .search-icon {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+    }
+    
+    .search-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    
+    /* INPUT */
+    
+    .site-search-box input {
+        width: 100%;
+        min-width: 0;
+        
+        font-size: 0.9rem;
+    }
+    
+    
+    /* BOTÃO */
+    
+    .search-button {
+        padding: 10px 13px;
+        font-size: 0.85rem;
+    }
+    
+    
+    /* RESULTADOS */
+    
+    .search-results-section {
+        padding: 45px 0;
+    }
+    
+    .search-empty {
+        padding: 40px 15px;
+    }
+    
+    
+    /* CATEGORIAS */
+    
+    .search-categories {
+        padding: 45px 0 60px;
+    }
+    
+    .search-category-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-category {
+        padding: 16px;
+    }
+    
+}
+/* =========================================================
+   PÁGINA 404 — MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+    
+    .error-page {
+        min-height: 65vh;
+        padding: 55px 0;
+    }
+    
+    .error-code {
+        font-size: clamp(5rem, 28vw, 8rem);
+        margin-bottom: 20px;
+    }
+    
+    .error-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+    
+    .error-content p {
+        font-size: 0.95rem;
+    }
+    
+    
+    /* BOTÕES */
+    
+    .error-actions {
+        flex-direction: column;
+        
+        width: 100%;
+        
+        gap: 10px;
+        
+        margin-top: 26px;
+    }
+    
+    .error-actions .button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+}pt
