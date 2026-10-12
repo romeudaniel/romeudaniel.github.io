@@ -12,6 +12,11 @@
 </script>
     <meta charset="UTF-8">
 
+<!-- Instruções de cache -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta
@@ -296,76 +301,15 @@
                 </div>
 
 
-                <!--
-                    Os projetos reais serão inseridos posteriormente
-                    através do JavaScript e do arquivo projetos.json.
-                -->
-
-
                 <div
-                    class="projects-grid"
-                    id="projects-container"
-                >
+    class="projects-grid"
+    id="projects-container"
+>
+    <!-- Os projetos serão carregados automaticamente -->
+</div>
 
-
-                    <!-- =========================================
-                         CARD DE EXEMPLO
-                    ========================================== -->
-
-                    <article class="content-card project-card">
-
-                        <div class="card-image">
-
-                            <div class="card-image-placeholder">
-                                Imagem do projeto
-                            </div>
-
-                        </div>
-
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Automação
-                            </span>
-
-                            <h3>
-                                Sistema de irrigação e iluminação automática
-                            </h3>
-
-                            <p>
-                                Sistema desenvolvido para automatizar
-                                processos de irrigação e iluminação
-                                utilizando sensores, temporização e
-                                circuitos eletrónicos.
-                            </p>
-
-                            <div class="card-meta">
-
-                                <span>
-                                    Eletrónica
-                                </span>
-
-                                <span>
-                                    Automação
-                                </span>
-
-                            </div>
-
-                            <a
-                                href="projeto.html?id=irrigacao-iluminacao"
-                                class="text-link"
-                            >
-                                Ver projeto →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
+    
+</div>
 
                 <!-- ESTADO SEM PROJETOS -->
 
@@ -510,6 +454,7 @@
 ====================================================== -->
 
 <script src="../js/main.js"></script>
+<script src="../js/projetos.js"></script>
 
 </body>
 </html>
