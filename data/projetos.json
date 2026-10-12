@@ -1,52 +1,240 @@
 {
-    "projetos": [
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "Sistema Integrado de Irrigação e Iluminação Automática",
+      "descricao": "Protótipo de baixo custo desenvolvido para automatizar a irrigação do solo e a iluminação de áreas externas através de sensores e circuitos eletrónicos.",
+      "categoria": "Eletrónica e Automação",
+      "autor": "Romeu Daniel",
+      "data": "2025-02-01",
+      "dataAtualizacao": "2026-10-08",
+      "imagemPrincipal": "images/projetos/irrigacao-iluminacao.webp",
+      "url":"/pages/projeto.html?id=1",
+      "estado": "Protótipo",
+      "tags": [
+        "Agricultura ",
+        "Sensores ",
+        "Sustentabilidade "
+      ],
+      "objetivo": {
+        "geral": "Criar um sistema que ligue automaticamente a irrigação quando o solo estiver seco e a iluminação quando estiver escuro.",
+        "especificos": [
+          "Detectar a humidade do solo.",
+          "Detectar a intensidade da luz ambiente.",
+          "Acionar automaticamente uma bomba de água.",
+          "Acionar automaticamente lâmpadas LED.",
+          "Reduzir o consumo de água e energia elétrica."
+        ]
+      },
+      "descricaoCompleta": "O projeto consiste no desenvolvimento de um Sistema Integrado de Irrigação e Iluminação Automática, utilizando sensores e circuitos eletrónicos de baixo custo. A proposta procura reduzir o desperdício de água e energia elétrica, além de diminuir a necessidade de intervenção humana constante. O sistema é composto por dois módulos principais: um módulo de irrigação automática e um módulo de iluminação automática. O projeto também prevê um sistema de deteção do nível de água do reservatório para interromper o funcionamento da bomba quando a água atingir o nível mínimo, evitando o funcionamento a seco.",
+      "componentes": [
         {
-            "id": 1,
-            "nome": "Sistema de Irrigação Automática",
-            "descricao": "Sistema automático desenvolvido para controlar a irrigação com base nas condições de humidade do solo.",
-            "categoria": "automacao",
-            "imagem": "images/projetos/irrigacao-automatica.webp",
-            "data": "2026-09-05",
-            "url": "projeto.html?id=1",
-            "tecnologias": [
-                "Arduino",
-                "Sensores",
-                "Relé",
-                "Bomba de água",
-                "Programação"
-            ]
+          "nome": "Sensor de humidade do solo",
+          "quantidade": 1,
+          "funcao": "Detetar o nível de humidade do solo."
         },
         {
-            "id": 2,
-            "nome": "Sistema Automático de Iluminação",
-            "descricao": "Projeto de iluminação automática utilizando sensores para controlar o acionamento das luzes de acordo com as condições do ambiente.",
-            "categoria": "automacao",
-            "imagem": "images/projetos/iluminacao-automatica.webp",
-            "data": "2026-09-05",
-            "url": "projeto.html?id=2",
-            "tecnologias": [
-                "LDR",
-                "NE555",
-                "CD4017",
-                "Relé",
-                "Circuito eletrónico"
-            ]
+          "nome": "Sensor LDR",
+          "quantidade": 1,
+          "funcao": "Detetar a intensidade da luz ambiente."
         },
         {
-            "id": 3,
-            "nome": "Semáforo Inteligente",
-            "descricao": "Sistema de controlo de tráfego desenvolvido com sensores para detetar veículos e adaptar o funcionamento do semáforo.",
-            "categoria": "robotica",
-            "imagem": "images/projetos/semaforo-inteligente.webp",
-            "data": "2026-09-05",
-            "url": "projeto.html?id=3",
-            "tecnologias": [
-                "Arduino",
-                "Sensores IR",
-                "LEDs",
-                "Programação",
-                "Eletrónica digital"
-            ]
+          "nome": "LM358 ou LM393",
+          "quantidade": null,
+          "funcao": "Realizar a comparação e o controlo dos sinais."
+        },
+        {
+          "nome": "TIP122 ou BC547",
+          "quantidade": 2,
+          "funcao": "Realizar o acionamento do circuito."
+        },
+        {
+          "nome": "Relé 12V",
+          "quantidade": 1,
+          "funcao": "Realizar a comutação das cargas."
+        },
+        {
+          "nome": "Bomba de água DC",
+          "quantidade": 1,
+          "funcao": "Realizar a irrigação."
+        },
+        {
+          "nome": "Lâmpadas LED",
+          "quantidade": null,
+          "funcao": "Realizar a iluminação automática."
+        },
+        {
+          "nome": "Diodo 1N4007",
+          "quantidade": null,
+          "funcao": "Proteção do circuito."
+        },
+        {
+          "nome": "Resistores",
+          "quantidade": null,
+          "funcao": "Composição e controlo dos circuitos."
+        },
+        {
+          "nome": "Potenciômetros",
+          "quantidade": null,
+          "funcao": "Ajuste dos circuitos."
+        },
+        {
+          "nome": "Painéis solares",
+          "quantidade": 1,
+          "funcao": "Alimentação do sistema."
+        },
+        {
+          "nome": "Baterias",
+          "quantidade": null,
+          "funcao": "Armazenamento da energia."
+        },
+        {
+          "nome": "Caixa plástica",
+          "quantidade": null,
+          "funcao": "Proteção dos componentes eletrónicos."
+        },
+        {
+          "nome": "Protoboard e fios",
+          "quantidade": null,
+          "funcao": "Montagem e interligação do circuito."
+        },
+        {
+          "nome": "Reservatório de água",
+          "quantidade": null,
+          "funcao": "Armazenamento da água utilizada na irrigação."
+        },
+        {
+          "nome": "Tubos e mangueiras",
+          "quantidade": null,
+          "funcao": "Distribuição da água."
         }
-    ]
+      ],
+      "funcionamento": {
+        "irrigacao": {
+          "titulo": "Módulo de Irrigação Automática",
+          "descricao": "O sensor de humidade do solo envia um sinal para um circuito comparador. Quando o solo estiver seco, o circuito ativa um relé que liga a bomba de água, permitindo realizar a irrigação.",
+          "fluxo": [
+            "Sensor de humidade",
+            "Circuito comparador",
+            "Relé",
+            "Bomba de água",
+            "Irrigação"
+          ]
+        },
+        "iluminacao": {
+          "titulo": "Módulo de Iluminação Automática",
+          "descricao": "O LDR é utilizado para medir a luminosidade ambiente. Quando a intensidade da luz diminui, o circuito de controlo aciona um relé que permite a passagem de energia para as lâmpadas LED.",
+          "fluxo": [
+            "LDR",
+            "Circuito de controlo",
+            "Relé",
+            "Lâmpadas LED"
+          ]
+        },
+        "protecaoBomba": {
+          "titulo": "Proteção contra funcionamento a seco",
+          "descricao": "O sistema utiliza um sensor de nível de água para verificar o estado do reservatório. Quando a água chega ao nível mínimo, o sistema corta a energia do motor, evitando que a bomba continue a funcionar sem água.",
+          "fluxo": [
+            "Sensor de nível",
+            "Deteção do nível mínimo",
+            "Corte da alimentação",
+            "Proteção da bomba"
+          ]
+        }
+      },
+      "esquema": {
+        "descricao": "O projeto é constituído por módulos de irrigação e iluminação automática, cada um com o respetivo sensor, circuito de controlo, relé e atuador.",
+        "modulos": [
+          {
+            "nome": "Módulo de Irrigação Automática",
+            "fluxo": "Sensor de humidade → Comparador → Relé → Bomba de água"
+          },
+          {
+            "nome": "Módulo de Iluminação Automática",
+            "fluxo": "LDR → Circuito de controlo → Relé → Lâmpadas LED"
+          }
+        ],
+        "imagem": "images/projetos/esquema-irrigacao-iluminacao.webp"
+      },
+      "codigo": {
+        "disponivel": false,
+        "linguagem": null,
+        "descricao": "O relatório não apresenta código-fonte. A solução descrita utiliza principalmente sensores, comparadores, transistores e relés, sendo apresentada como uma solução simples, analógica ou semi-digital."
+      },
+      "testes": {
+        "estado": "Não documentados",
+        "descricao": "O cronograma do projeto prevê uma etapa de testes e ajustes com duração estimada de uma semana. No entanto, o relatório não apresenta os testes realizados nem os respetivos resultados experimentais.",
+        "testes": []
+      },
+      "resultados": {
+        "tipo": "Resultados esperados",
+        "itens": [
+          "Funcionamento automático da irrigação.",
+          "Funcionamento automático da iluminação.",
+          "Redução do consumo de água.",
+          "Redução do consumo de energia elétrica.",
+          "Protótipo funcional para demonstração em laboratório."
+        ]
+      },
+      "melhoriasFuturas": [],
+      "aplicacoes": [
+        "Agricultura familiar",
+        "Jardins residenciais",
+        "Escolas técnicas",
+        "Estufas agrícolas",
+        "Parques públicos",
+        "Cidades inteligentes"
+      ],
+      "calculos": {
+        "formula": "P = V × I",
+        "bomba": {
+          "tensao": "12 V",
+          "corrente": "2 A",
+          "potencia": "24 W"
+        },
+        "iluminacao": {
+          "quantidade": 4,
+          "potenciaPorLampada": "3 W",
+          "potenciaTotal": "12 W"
+        },
+        "potenciaTotal": "36 W"
+      },
+      "cronograma": [
+        {
+          "etapa": 1,
+          "atividade": "Pesquisa e planeamento",
+          "duracao": "1 semana"
+        },
+        {
+          "etapa": 2,
+          "atividade": "Desenho dos circuitos",
+          "duracao": "1 semana"
+        },
+        {
+          "etapa": 3,
+          "atividade": "Montagem do protótipo",
+          "duracao": "2 semanas"
+        },
+        {
+          "etapa": 4,
+          "atividade": "Testes e ajustes",
+          "duracao": "1 semana"
+        },
+        {
+          "etapa": 5,
+          "atividade": "Documentação e relatório",
+          "duracao": "1 semana"
+        }
+      ],
+      "equipa": [
+        "António da Silva",
+        "Aurélio Lucas",
+        "Bernardino Sessa",
+        "Romeu Daniel",
+        "Teresa Kambuta",
+        "Uziel Lucama"
+      ],
+      "orientador": "Herculano Abel"
+    }
+  ]
 }
