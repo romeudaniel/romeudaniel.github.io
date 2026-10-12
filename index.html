@@ -13,7 +13,12 @@
 </script>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Instruções de controlo da cache -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
           content="Site oficial de Romeu Daniel — Eletrónica, Programação, Automação, Telecomunicações, Robótica e Tecnologia.">
@@ -477,88 +482,10 @@
                 <div class="projects-grid">
 
 
-                    <!-- PROJETO 01 -->
-
-                    <article class="content-card">
-
-                        <div class="card-image">
-
-                            <img
-                                src="images/projetos/projeto-placeholder.jpg"
-                                alt="Projeto em destaque"
-                            >
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Automação
-                            </span>
-
-                            <h3>
-                                Projeto em desenvolvimento
-                            </h3>
-
-                            <p>
-                                Em breve será apresentado um novo projeto.
-                            </p>
-
-                            <a
-                                href="pages/projetos.html"
-                                class="text-link"
-                            >
-                                Ver projeto →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJETO 02 -->
-
-                    <article class="content-card">
-
-                        <div class="card-image">
-
-                            <img
-                                src="images/projetos/projeto-placeholder.jpg"
-                                alt="Projeto em destaque"
-                            >
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Eletrónica
-                            </span>
-
-                            <h3>
-                                Projeto em desenvolvimento
-                            </h3>
-
-                            <p>
-                                Em breve será apresentado um novo projeto.
-                            </p>
-
-                            <a
-                                href="pages/projetos.html"
-                                class="text-link"
-                            >
-                                Ver projeto →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-                <div class="section-action">
-
+                    <div class="projects-grid" id="projects-container">
+    <!-- Os projetos serão carregados automaticamente pelo projetos.js -->
+</div>
+                            
                     <a
                         href="pages/projetos.html"
                         class="button button-secondary"
@@ -877,6 +804,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/artigos.js"></script>
+    <script src="js/projetos.js"></script>
 
 </body>
 </html>
