@@ -7,8 +7,8 @@
       "categoria": "Eletrónica e Automação",
       "autor": "Romeu Daniel",
       "data": "2025-02-01",
-      "dataAtualizacao": "2026-10-08",
-      "imagemPrincipal": "images/projetos/irrigacao-iluminacao.webp",
+      "dataAtualizacao": "2026-10-14",
+      "imagemPrincipal": "../images/projetos/irrigacao-iluminacao.webp",
       "url":"/pages/projeto.html?id=1",
       "estado": "Protótipo",
       "tags": [
@@ -154,7 +154,7 @@
             "fluxo": "LDR → Circuito de controlo → Relé → Lâmpadas LED"
           }
         ],
-        "imagem": "images/projetos/esquema-irrigacao-iluminacao.webp"
+        "imagem": "../images/projetos/esquema-irrigacao-iluminacao.webp"
       },
       "codigo": {
         "disponivel": false,
