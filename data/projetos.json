@@ -7,7 +7,7 @@
       "categoria": "Eletrónica e Automação",
       "autor": "Romeu Daniel",
       "data": "2025-02-01",
-      "dataAtualizacao": "2026-10-14",
+      "dataAtualizacao": "2026-10-16",
       "imagemPrincipal": "../images/projetos/irrigacao-iluminacao.webp",
       "url":"/pages/projeto.html?id=1",
       "estado": "Protótipo",
@@ -163,7 +163,7 @@
       },
       "testes": {
         "estado": "Não documentados",
-        "descricao": "O cronograma do projeto prevê uma etapa de testes e ajustes com duração estimada de uma semana. No entanto, o relatório não apresenta os testes realizados nem os respetivos resultados experimentais.",
+        "descricao": "O cronograma do projeto prevê uma etapa de testes e ajustes com duração estimada de uma semana.",
         "testes": []
       },
       "resultados": {
